@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { FC } from "react";
-import MenuItems from "./MenuItems";
 import Link from "next/link";
 import Breakline from "../../elements/Breakline";
 
