@@ -20,7 +20,7 @@ export default function MenuItems() {
           </Link>
         </li>
         <li>
-          <Link href={"#Kontak"} aria-label="Kontak">
+          <Link href={"#kontak"} aria-label="Kontak">
             Kontak
           </Link>
         </li>

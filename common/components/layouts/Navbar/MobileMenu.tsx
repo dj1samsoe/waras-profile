@@ -25,12 +25,12 @@ export const MobileMenu: FC = () => {
             </Link>
           </li>
           <li>
-            <Link href={"#Fasilitas"} aria-label="Fasilitas">
+            <Link href={"#fasilitas"} aria-label="Fasilitas">
               Fasilitas
             </Link>
           </li>
           <li>
-            <Link href={"#Kontak"} aria-label="Kontak">
+            <Link href={"#kontak"} aria-label="Kontak">
               Kontak
             </Link>
           </li>
