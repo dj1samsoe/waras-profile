@@ -10,15 +10,16 @@ export default function MenuItems() {
           </Link>
         </li>
         <li>
-          <Link href={"#pelayanan"} aria-label="Pelayanan">
-            Pelayanan
-          </Link>
-        </li>
-        <li>
           <Link href={"#fasilitas"} aria-label="Fasilitas">
             Fasilitas
           </Link>
         </li>
+        <li>
+          <Link href={"#pelayanan"} aria-label="Pelayanan">
+            Pelayanan
+          </Link>
+        </li>
+
         <li>
           <Link href={"#kontak"} aria-label="Kontak">
             Kontak
