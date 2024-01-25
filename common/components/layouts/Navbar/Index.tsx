@@ -24,8 +24,8 @@ export default function Navbar() {
     <nav
       className={
         isVisible
-          ? "z-[99999] fixed shadow-sm xl:shadow-none w-full md:px-20 md:py-5 bg-[#343045] transition-all ease-in-out duration-500"
-          : "z-[99999] fixed shadow-sm xl:shadow-none w-full md:px-20 md:py-5 md:bg-transparent bg-[#343045] transition-all ease-in-out duration-500"
+          ? "z-[99999] fixed shadow-sm xl:shadow-none max-w-screen-2xl w-full md:px-20 md:py-5 bg-[#343045] transition-all ease-in-out duration-500"
+          : "z-[99999] fixed shadow-sm xl:shadow-none max-w-screen-2xl w-full md:px-20 md:py-5 md:bg-transparent bg-[#343045] transition-all ease-in-out duration-500"
       }
     >
       <Menu />

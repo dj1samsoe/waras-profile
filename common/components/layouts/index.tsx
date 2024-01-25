@@ -14,7 +14,9 @@ export default function Layouts({ children }: LayoutsProps) {
       <header>
         <Navbar />
       </header>
-      <main className="min-h-screen max-w-screen bg-[#343045]">{children}</main>
+      <main className="min-h-screen max-w-screen-2xl bg-[#343045]">
+        {children}
+      </main>
       <Footer />
     </React.Fragment>
   );
