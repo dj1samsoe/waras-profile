@@ -3,7 +3,6 @@ import { Metadata } from "next";
 import { MdWhatsapp } from "react-icons/md";
 import Image from "next/image";
 import AnimateCounter from "@/common/components/elements/AnimateCounter";
-import { RiSteering2Line } from "react-icons/ri";
 import { FaAddressCard, FaChartLine, FaRegHandshake } from "react-icons/fa";
 import { FaClockRotateLeft } from "react-icons/fa6";
 import { BsBuildingGear } from "react-icons/bs";
@@ -12,6 +11,8 @@ import { IoMdPricetags } from "react-icons/io";
 import { CiFaceSmile } from "react-icons/ci";
 import { GrHostMaintenance, GrSchedule } from "react-icons/gr";
 import { IoCarOutline } from "react-icons/io5";
+import Card from "@/common/components/elements/Card";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: `${METADATA.creator} - Kursus Mengemudi Terbaik di Krian`,
@@ -37,13 +38,17 @@ export default function Home() {
                 Kursus Mengemudi Terbaik di Krian
               </h1>
               <p className="md:text-lg text-md">
-                Kursus Mengemudi Manual atau Matic dengan harga bersaing dan
-                pelayanan maksimal
+                Kursus Mengemudi Manual atau Matic dan Pembuatan SIM dengan
+                harga bersaing dan pelayanan maksimal
               </p>
-              <button className="px-5 py-3 rounded-full bg-gradient-to-r from-[#8176AF] to-[#C0B7E8] md:text-lg text-md text-[#303045] hover:text-white flex items-center gap-3 hover:bg-gradient-to-r hover:from-[#342F48] hover:to-[#9586D9] transition-all duration-300 max-w-[16rem]">
+              <Link
+                href="https://wa.me/6289679047230/"
+                target="_blank"
+                className="px-5 py-3 rounded-full bg-gradient-to-r from-[#8176AF] to-[#C0B7E8] md:text-lg text-md text-[#303045] hover:text-white flex items-center gap-3 hover:bg-gradient-to-r hover:from-[#342F48] hover:to-[#9586D9] transition-all duration-300 max-w-[16rem]"
+              >
                 <MdWhatsapp className="w-6 h-6" />
                 Hubungi Sekarang
-              </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -286,6 +291,100 @@ export default function Home() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+      <section className="max-w-screen-2xl md:px-20 px-5 py-20">
+        <div className="grid md:grid-cols-2 grid-cols-1 gap-10">
+          <div className="flex flex-col space-y-3">
+            <p className="md:text-xl text-lg font-semibold">
+              Pilihan Paket yang tersedia di
+            </p>
+            <div className="flex gap-3">
+              <h1 className="md:text-3xl text-2xl font-semibold text-white">
+                Kursus Mengemudi Waras
+              </h1>
+              <Image src="/arrow.svg" alt="logo" width={100} height={100} />
+            </div>
+          </div>
+          <p>
+            Kami menawarkan Paket Latihan Manual dan Matic yang tentu saja
+            dengan harga bersaing dan pelayanan yang maksimal. Kita akan
+            diajarkan mulai dari dasar seperti pengenalan bagian-bagian mobil,
+            pedal gas, kopling, rem, tanjakan atau turunan, dan juga parkir.
+          </p>
+        </div>
+        <h1 className="md:text-2xl text-xl font-medium text-white py-10 text-center">
+          Paket Manual/Matic
+        </h1>
+        <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 gap-7 ">
+          <Card className="flex flex-col space-y-10 items-center bg-[#46415d] py-10">
+            <h1 className="md:text-2xl text-xl font-medium text-white text-center">
+              Intensif
+            </h1>
+            <p>
+              <sup className="text-xl text-white/80">Rp</sup>
+              <span className="text-5xl font-semibold text-white">650</span>
+              <sub className="text-xl text-white/80">rb</sub>
+            </p>
+            <div className="flex flex-col space-y-2 items-center text-md">
+              <p>10x Pertemuan</p>
+              <p>@2jam/pertemuan</p>
+            </div>
+          </Card>
+          <Card className="flex flex-col space-y-10 items-center bg-[#46415d] py-10">
+            <h1 className="md:text-2xl text-xl font-medium text-white text-center">
+              Ekonomis
+            </h1>
+            <p>
+              <sup className="text-xl text-white/80">Rp</sup>
+              <span className="text-5xl font-semibold text-white">650</span>
+              <sub className="text-xl text-white/80">rb</sub>
+            </p>
+            <div className="flex flex-col space-y-2 items-center text-md">
+              <p>5x Pertemuan</p>
+              <p>2 jam & 3 jam pertemuan</p>
+            </div>
+          </Card>
+          <Card className="flex flex-col space-y-10 items-center bg-[#46415d] py-10">
+            <h1 className="md:text-2xl text-xl font-medium text-white text-center">
+              Intensif + SIM
+            </h1>
+            <p>
+              <sup className="text-xl text-white/80">Rp</sup>
+              <span className="text-5xl font-semibold text-white">650</span>
+              <sub className="text-xl text-white/80">rb</sub>
+            </p>
+            <div className="flex flex-col space-y-2 items-center text-md">
+              <p>10x Pertemuan</p>
+              <p>@2jam/pertemuan</p>
+              <p>Pembuatan SIM A</p>
+            </div>
+          </Card>
+          <Card className="flex flex-col space-y-10 items-center bg-[#46415d] py-10">
+            <h1 className="md:text-2xl text-xl font-medium text-white text-center">
+              Ekonomis + SIM
+            </h1>
+            <p>
+              <sup className="text-xl text-white/80">Rp</sup>
+              <span className="text-5xl font-semibold text-white">650</span>
+              <sub className="text-xl text-white/80">rb</sub>
+            </p>
+            <div className="flex flex-col space-y-2 items-center text-md">
+              <p>5x Pertemuan</p>
+              <p>2 jam & 3 jam pertemuan</p>
+              <p>Pembuatan SIM A</p>
+            </div>
+          </Card>
+        </div>
+        <div className="flex justify-center py-10">
+          <Link
+            href="https://wa.me/6289679047230/"
+            target="_blank"
+            className="px-5 py-3 rounded-full bg-gradient-to-r from-[#8176AF] to-[#C0B7E8] md:text-lg text-md text-[#303045] hover:text-white flex items-center gap-3 hover:bg-gradient-to-r hover:from-[#342F48] hover:to-[#9586D9] transition-all duration-300 max-w-[16rem]"
+          >
+            <MdWhatsapp className="w-6 h-6" />
+            Hubungi Sekarang
+          </Link>
         </div>
       </section>
     </>
