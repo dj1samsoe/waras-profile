@@ -14,7 +14,7 @@ export default function MenuHeader({
   imageSize,
 }: ProfileHeaderProps) {
   return (
-    <div className={clsx("flex lg:flex-col w-full ", expandMenu && "flex-col")}>
+    <div className={clsx("flex")}>
       <Link href={"/"} aria-label="Home" className="cursor-pointer">
         <Image
           src={"/logo.png"}

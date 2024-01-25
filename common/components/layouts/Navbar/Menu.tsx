@@ -37,7 +37,7 @@ export default function Menu() {
         isOpen && "pb-0"
       )}
     >
-      <div className="flex items-center">
+      <div className="flex items-center justify-between">
         <MenuHeader expandMenu={isOpen} imageSize={imageSize} />
         <div className="hidden md:flex">
           <MenuItems />
