@@ -4,9 +4,14 @@ import { MdWhatsapp } from "react-icons/md";
 import Image from "next/image";
 import AnimateCounter from "@/common/components/elements/AnimateCounter";
 import { RiSteering2Line } from "react-icons/ri";
-import { FaAddressCard, FaChartLine } from "react-icons/fa";
+import { FaAddressCard, FaChartLine, FaRegHandshake } from "react-icons/fa";
 import { FaClockRotateLeft } from "react-icons/fa6";
 import { BsBuildingGear } from "react-icons/bs";
+import Breakline from "@/common/components/elements/Breakline";
+import { IoMdPricetags } from "react-icons/io";
+import { CiFaceSmile } from "react-icons/ci";
+import { GrHostMaintenance, GrSchedule } from "react-icons/gr";
+import { IoCarOutline } from "react-icons/io5";
 
 export const metadata: Metadata = {
   title: `${METADATA.creator} - Kursus Mengemudi Terbaik di Krian`,
@@ -25,7 +30,7 @@ export default function Home() {
           backgroundPosition: "bottom, center",
         }}
       >
-        <div className="grid lg:grid-cols-5 md:grid-cols-2 grid-cols-1 md:px-20 px-5 max-w-screen-2xl bg-gradient-to-r from-[#343045] via-[#343045]/90 to-transparent">
+        <div className="grid lg:grid-cols-5 md:grid-cols-2 grid-cols-1 md:px-20 px-5 max-w-screen-2xl bg-gradient-to-r from-[#343045] via-[#343045]/90 to-[#343045]/20">
           <div className="lg:col-span-3 space-y-5 h-screen flex flex-col justify-center">
             <div className="flex flex-col gap-5 ">
               <h1 className="md:text-5xl text-4xl font-semibold">
@@ -111,7 +116,7 @@ export default function Home() {
               <Image src="/arrow.svg" alt="logo" width={100} height={100} />
             </div>
           </div>
-          <div className="grid lg:grid-cols-4 grid-cols-2 lg:gap-5 gap-8">
+          <div className="grid lg:grid-cols-4 grid-cols-2 lg:gap-5 gap-8 md:pt-0 pt-3">
             <div className="flex flex-col items-center space-y-3">
               <div className="relative">
                 <FaAddressCard className="absolute bottom-3 right-1 w-16 h-16 -z[50] text-white/10" />
@@ -157,6 +162,128 @@ export default function Home() {
                 <span className="font-semibold text-4xl">+</span>
               </div>
               <p className="font-medium text-md text-center">Kantor Cabang</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        className="max-w-screen-2xl md:px-20 px-5 py-20 flex flex-col space-y-5 items-center justify-center"
+        id="fasilitas"
+      >
+        <div className="flex flex-col items-center space-y-5 pb-5">
+          <div className="flex flex-col space-y-3 items-center">
+            <p className="md:text-xl text-lg font-semibold">
+              Kenapa Memilih Kami?
+            </p>
+            <h1 className="md:text-3xl text-2xl font-semibold text-white">
+              Kami Memberikan Fasilitas dan Service Terbaik
+            </h1>
+          </div>
+          <Breakline className="w-24 border-2" />
+          <p className="text-md">
+            Beberapa keunggulan yang kami miliki untuk menjaga kualitas dan mutu
+            pengajaran yang baik
+          </p>
+        </div>
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-7">
+          <div className="relative">
+            <Image
+              src="/about.webp"
+              alt="fasilitas-image"
+              width={500}
+              height={500}
+              className="w-full object-cover rounded-2xl"
+            />
+            <div className="absolute top-0 left-0 bottom-0 right-0 w-full h-full bg-gradient-to-t from-[#343045]/90 via-[#343045]/60 to-[#343045]/20">
+              <div className="flex flex-col items-center justify-center h-full w-full">
+                <FaRegHandshake className="w-16 h-16 text-white/50" />
+                <p className="text-xl font-reguler text-white/90">Terpercaya</p>
+              </div>
+            </div>
+          </div>
+          <div className="relative">
+            <Image
+              src="/about.webp"
+              alt="fasilitas-image"
+              width={500}
+              height={500}
+              className="w-full object-cover rounded-2xl"
+            />
+            <div className="absolute top-0 left-0 bottom-0 right-0 w-full h-full bg-gradient-to-t from-[#343045]/90 via-[#343045]/60 to-[#343045]/20">
+              <div className="flex flex-col items-center justify-center h-full w-full">
+                <IoMdPricetags className="w-16 h-16 text-white/50" />
+                <p className="text-xl font-reguler text-white/90">
+                  Harga Kompetitif
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="relative">
+            <Image
+              src="/about.webp"
+              alt="fasilitas-image"
+              width={500}
+              height={500}
+              className="w-full object-cover rounded-2xl"
+            />
+            <div className="absolute top-0 left-0 bottom-0 right-0 w-full h-full bg-gradient-to-t from-[#343045]/90 via-[#343045]/60 to-[#343045]/20">
+              <div className="flex flex-col items-center justify-center h-full w-full">
+                <CiFaceSmile className="w-16 h-16 text-white/50" />
+                <p className="text-xl font-reguler text-white/90">
+                  Pelayanan Terbaik
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="relative">
+            <Image
+              src="/about.webp"
+              alt="fasilitas-image"
+              width={500}
+              height={500}
+              className="w-full object-cover rounded-2xl"
+            />
+            <div className="absolute top-0 left-0 bottom-0 right-0 w-full h-full bg-gradient-to-t from-[#343045]/90 via-[#343045]/60 to-[#343045]/20">
+              <div className="flex flex-col space-y-2 items-center justify-center h-full w-full">
+                <GrSchedule className="w-14 h-14 text-white/50" />
+                <p className="text-xl font-reguler text-white/90">
+                  Jadwal Fleksibel
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="relative">
+            <Image
+              src="/about.webp"
+              alt="fasilitas-image"
+              width={500}
+              height={500}
+              className="w-full object-cover rounded-2xl"
+            />
+            <div className="absolute top-0 left-0 bottom-0 right-0 w-full h-full bg-gradient-to-t from-[#343045]/90 via-[#343045]/60 to-[#343045]/20">
+              <div className="flex flex-col space-y-2 items-center justify-center h-full w-full">
+                <GrHostMaintenance className="w-14 h-14 text-white/50" />
+                <p className="text-xl font-reguler text-white/90">
+                  Maintenance Rutin
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="relative">
+            <Image
+              src="/about.webp"
+              alt="fasilitas-image"
+              width={500}
+              height={500}
+              className="w-full object-cover rounded-2xl"
+            />
+            <div className="absolute top-0 left-0 bottom-0 right-0 w-full h-full bg-gradient-to-t from-[#343045]/90 via-[#343045]/60 to-[#343045]/20">
+              <div className="flex flex-col items-center justify-center h-full w-full">
+                <IoCarOutline className="w-16 h-16 text-white/50" />
+                <p className="text-xl font-reguler text-white/90">
+                  Gratis Antar Jemput
+                </p>
+              </div>
             </div>
           </div>
         </div>

@@ -15,7 +15,7 @@ export default function MenuItems() {
           </Link>
         </li>
         <li>
-          <Link href={"#Fasilitas"} aria-label="Fasilitas">
+          <Link href={"#fasilitas"} aria-label="Fasilitas">
             Fasilitas
           </Link>
         </li>
