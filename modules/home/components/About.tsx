@@ -6,27 +6,21 @@ import { motion } from "framer-motion";
 export default function About() {
   return (
     <section className="max-w-screen-2xl md:px-20 px-5 py-20" id="tentang">
-      <div className="grid md:grid-cols-2 grid-cols-1 gap-10">
-        <motion.div
-          initial={{ opacity: 0, x: -50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
-        >
-          <Image
-            src="/about.webp"
-            alt="about-image"
-            width={500}
-            height={400}
-            className="w-full h-full object-cover rounded-3xl shadow-xl"
-          />
-        </motion.div>
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        className="grid md:grid-cols-2 grid-cols-1 gap-10"
+      >
+        <Image
+          src="/about.webp"
+          alt="about-image"
+          width={500}
+          height={400}
+          className="w-full h-full object-cover rounded-3xl shadow-xl"
+        />
 
-        <motion.div
-          initial={{ opacity: 0, x: 50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
-          className="flex flex-col space-y-5"
-        >
+        <div className="flex flex-col space-y-5">
           <div className="flex flex-col space-y-2">
             <span className="md:text-xl text-lg font-semibold">
               Tentang Kami
@@ -47,8 +41,8 @@ export default function About() {
             Mengemudi Waras dan buatlah perjalanan Anda di jalan raya menjadi
             pengalaman belajar yang bermakna dan memuaskan.
           </p>
-        </motion.div>
-      </div>
+        </div>
+      </motion.div>
     </section>
   );
 }

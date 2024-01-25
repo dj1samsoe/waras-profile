@@ -10,13 +10,13 @@ import { SERVICE } from "@/common/constant/service";
 export default function Service() {
   return (
     <section className="max-w-screen-2xl md:px-20 px-5 py-20" id="pelayanan">
-      <div className="grid md:grid-cols-2 grid-cols-1 gap-10">
-        <motion.div
-          initial={{ opacity: 0, x: -50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
-          className="flex flex-col space-y-3"
-        >
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        className="grid md:grid-cols-2 grid-cols-1 gap-10"
+      >
+        <div className="flex flex-col space-y-3">
           <p className="md:text-xl text-lg font-semibold">
             Pilihan Paket yang tersedia di
           </p>
@@ -26,18 +26,14 @@ export default function Service() {
             </h1>
             <Image src="/arrow.svg" alt="logo" width={100} height={100} />
           </div>
-        </motion.div>
-        <motion.p
-          initial={{ opacity: 0, x: 50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
-        >
+        </div>
+        <p>
           Kami menawarkan Paket Latihan Manual dan Matic yang tentu saja dengan
           harga bersaing dan pelayanan yang maksimal. Kita akan diajarkan mulai
           dari dasar seperti pengenalan bagian-bagian mobil, pedal gas, kopling,
           rem, tanjakan atau turunan, dan juga parkir.
-        </motion.p>
-      </div>
+        </p>
+      </motion.div>
       <motion.h1
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -46,35 +42,36 @@ export default function Service() {
       >
         Paket Manual/Matic
       </motion.h1>
-      <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 gap-7 "
-      >
+      <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 gap-7 ">
         {SERVICE?.map((item, index) => (
-          <Card
-            key={index}
-            className="flex flex-col space-y-10 items-center bg-[#46415d] py-10 hover:-translate-y-3 transition-all duration-200"
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: index * 0.3 }}
           >
-            <h1 className="md:text-2xl text-xl font-medium text-white text-center">
-              {item.title}
-            </h1>
-            <p>
-              <sup className="text-xl text-white/80">{item.sup}</sup>
-              <span className="text-5xl font-semibold text-white">
-                {item.price}
-              </span>
-              <sub className="text-xl text-white/80">{item.sub}</sub>
-            </p>
-            <div className="flex flex-col space-y-2 items-center text-md">
-              <p>{item.description1}</p>
-              <p>{item.description2}</p>
-              <p>{item.description3}</p>
-            </div>
-          </Card>
+            <Card
+              key={index}
+              className="flex flex-col space-y-10 items-center bg-[#46415d] py-10 hover:-translate-y-3 transition-all duration-200"
+            >
+              <h1 className="md:text-2xl text-xl font-medium text-white text-center">
+                {item.title}
+              </h1>
+              <p>
+                <sup className="text-xl text-white/80">{item.sup}</sup>
+                <span className="text-5xl font-semibold text-white">
+                  {item.price}
+                </span>
+                <sub className="text-xl text-white/80">{item.sub}</sub>
+              </p>
+              <div className="flex flex-col space-y-2 items-center text-md">
+                <p>{item.description1}</p>
+                <p>{item.description2}</p>
+                <p>{item.description3}</p>
+              </div>
+            </Card>
+          </motion.div>
         ))}
-      </motion.div>
+      </div>
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}

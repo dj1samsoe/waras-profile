@@ -10,7 +10,7 @@ export default function Hero() {
       initial={{ opacity: 0, y: -100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className={`min-h-screen flex items-center text-white bg-cover`}
+      className={`min-h-screen max-w-screen-2xl flex items-center text-white bg-cover`}
       style={{
         backgroundImage: "url('/hero.webp')",
         backgroundPosition: "bottom, center",
