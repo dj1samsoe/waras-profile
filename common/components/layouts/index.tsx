@@ -2,6 +2,7 @@
 
 import React, { ReactNode } from "react";
 import Navbar from "./Navbar/Index";
+import Footer from "./Footer/Footer";
 
 interface LayoutsProps {
   children: ReactNode;
@@ -14,6 +15,7 @@ export default function Layouts({ children }: LayoutsProps) {
         <Navbar />
       </header>
       <main className="min-h-screen max-w-screen bg-[#343045]">{children}</main>
+      <Footer />
     </React.Fragment>
   );
 }
