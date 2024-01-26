@@ -2,7 +2,7 @@ export const SERVICE = [
   {
     title: "Intensif",
     sup: "Rp",
-    price: 650,
+    price: 500,
     sub: "rb",
     description1: "5x Pertemuan",
     description2: "@2jam/pertemuan",
@@ -11,7 +11,7 @@ export const SERVICE = [
   {
     title: "Ekonomis",
     sup: "Rp",
-    price: 450,
+    price: 400,
     sub: "rb",
     description1: "2x Pertemuan",
     description2: "2jam & 3jam pertemuan",
@@ -29,7 +29,7 @@ export const SERVICE = [
   {
     title: "Ekonomis + SIM",
     sup: "Rp",
-    price: 600,
+    price: 700,
     sub: "rb",
     description1: "2x Pertemuan",
     description2: "2jam & 3jam pertemuan",
