@@ -15,7 +15,7 @@ import MenuItems from "./MenuItems";
 
 export default function Menu() {
   const isMobile = useIsMobile();
-  const imageSize = isMobile ? 200 : 175;
+  const imageSize = isMobile ? 175 : 200;
   const { isOpen, toggleMenu } = useMenu();
 
   useEffect(() => {

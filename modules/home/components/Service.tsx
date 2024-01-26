@@ -47,11 +47,11 @@ export default function Service() {
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: index * 0.3 }}
+            transition={{ duration: 0.8, delay: index * 0.1 }}
           >
             <Card
               key={index}
-              className="flex flex-col space-y-10 items-center bg-[#46415d] py-10 hover:-translate-y-3 transition-all duration-200"
+              className="flex flex-col space-y-10 items-center bg-[#46415d] py-10 h-[20rem] hover:-translate-y-3 transition-all duration-200"
             >
               <h1 className="md:text-2xl text-xl font-medium text-white text-center">
                 {item.title}

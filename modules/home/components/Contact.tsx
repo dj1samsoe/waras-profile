@@ -30,10 +30,11 @@ export default function Contact() {
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.6338558042576!2d112.60473397409189!3d-7.394859892615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e780926c09e9f11%3A0x897642cbd42751e4!2sKursus%20Mengemudi%20Waras!5e0!3m2!1sid!2sid!4v1706179091577!5m2!1sid!2sid"
         width="600"
         height="450"
-        className="w-full h-[500px] rounded-xl my-10"
+        className="w-full md:h-[500px] h-[300px] rounded-xl my-10"
         allowFullScreen={true}
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
+        title="embed maps"
       />
     </section>
   );

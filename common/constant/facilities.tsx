@@ -7,7 +7,7 @@ import { IoCarOutline } from "react-icons/io5";
 export const FACILITIES = [
   {
     image: "/about.webp",
-    icon: <FaRegHandshake className="w-16 h-16 text-white/50" />,
+    icon: <FaRegHandshake className="w-20 h-20 text-white/50" />,
     title: "Terpercaya",
   },
   {
@@ -32,7 +32,7 @@ export const FACILITIES = [
   },
   {
     image: "/about.webp",
-    icon: <IoCarOutline className="w-16 h-16 text-white/50" />,
-    title: "Graits Antar Jemput",
+    icon: <IoCarOutline className="w-20 h-20 text-white/50" />,
+    title: "Gratis Antar Jemput",
   },
 ];

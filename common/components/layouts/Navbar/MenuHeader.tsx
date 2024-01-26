@@ -19,8 +19,8 @@ export default function MenuHeader({
         <Image
           src={"/logo.png"}
           alt="navbar-logo"
-          width={expandMenu ? 200 : imageSize * 0.9}
-          height={expandMenu ? 200 : imageSize * 0.9}
+          width={expandMenu ? 175 : imageSize * 0.9}
+          height={expandMenu ? 175 : imageSize * 0.9}
           className="lg:hover:scale-105"
         />
       </Link>

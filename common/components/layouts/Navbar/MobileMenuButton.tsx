@@ -46,7 +46,7 @@ const StyledMenuSpan = styled.span`
   border-radius: 10px;
 
   :nth-of-type(2) {
-    width: 70%;
+    width: 60%;
   }
 
   &.active:nth-of-type(1),

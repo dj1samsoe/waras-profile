@@ -27,7 +27,7 @@ export default function Facilities() {
           <p className="md:text-xl text-lg font-semibold">
             Kenapa Memilih Kami?
           </p>
-          <h1 className="md:text-3xl text-2xl font-semibold text-white">
+          <h1 className="md:text-3xl text-2xl font-semibold text-white text-center">
             Kami Memberikan Fasilitas dan Service Terbaik
           </h1>
         </div>
@@ -37,35 +37,36 @@ export default function Facilities() {
           pengajaran yang baik
         </p>
       </motion.div>
-      <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-7"
-      >
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-7">
         {FACILITIES?.map((item, index) => (
-          <div
-            key={index}
-            className="relative hover:scale-105 transition-all duration-200"
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: index * 0.1 }}
           >
-            <Image
-              src={item.image}
-              alt="fasilitas-image"
-              width={500}
-              height={500}
-              className="w-full object-cover rounded-2xl"
-            />
-            <div className="absolute top-0 left-0 z-[50] bottom-0 right-0 w-full h-full bg-gradient-to-t from-[#343045]/90 via-[#343045]/60 to-[#343045]/20">
-              <div className="flex flex-col items-center justify-center h-full w-full">
-                {item.icon}
-                <p className="text-xl font-reguler text-white/90">
-                  {item.title}
-                </p>
+            <div
+              key={index}
+              className="relative hover:scale-105 transition-all duration-200"
+            >
+              <Image
+                src={item.image}
+                alt="fasilitas-image"
+                width={500}
+                height={500}
+                className="w-full object-cover rounded-2xl"
+              />
+              <div className="absolute top-0 left-0 z-[50] bottom-0 right-0 w-full h-full bg-gradient-to-t from-[#343045]/90 via-[#343045]/60 to-[#343045]/20">
+                <div className="flex flex-col space-y-2 items-center justify-center h-full w-full">
+                  {item.icon}
+                  <p className="text-xl font-normal text-white/90">
+                    {item.title}
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
+          </motion.div>
         ))}
-      </motion.div>
+      </div>
     </section>
   );
 }

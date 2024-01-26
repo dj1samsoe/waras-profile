@@ -7,8 +7,8 @@ import { motion } from "framer-motion";
 export default function Hero() {
   return (
     <motion.section
-      initial={{ opacity: 0, y: -100 }}
-      animate={{ opacity: 1, y: 0 }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
       className={`min-h-screen max-w-screen-2xl flex items-center text-white bg-cover`}
       style={{
@@ -22,12 +22,12 @@ export default function Hero() {
             initial={{ opacity: 0, x: -100 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="flex flex-col gap-5 "
+            className="flex flex-col gap-5 md:items-start items-center"
           >
-            <h1 className="md:text-5xl text-4xl font-semibold">
+            <h1 className="md:text-5xl text-4xl font-semibold md:text-start text-center">
               Kursus Mengemudi Terbaik di Krian
             </h1>
-            <p className="md:text-lg text-md">
+            <p className="md:text-lg text-md md:text-start text-center">
               Kursus Mengemudi Manual atau Matic dan Pembuatan SIM dengan harga
               bersaing dan pelayanan maksimal
             </p>
