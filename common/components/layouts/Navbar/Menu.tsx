@@ -31,12 +31,7 @@ export default function Menu() {
   }, [isOpen]);
 
   return (
-    <div
-      className={clsx(
-        "md:p-0 p-5 w-full border-b md:border-none",
-        isOpen && "pb-0"
-      )}
-    >
+    <div className={clsx("md:p-0 p-5 w-full md:border-none", isOpen && "pb-0")}>
       <div className="flex items-center justify-between">
         <MenuHeader expandMenu={isOpen} imageSize={imageSize} />
         <div className="hidden md:flex">

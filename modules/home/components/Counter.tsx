@@ -15,6 +15,7 @@ export default function Counter() {
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
         className="grid md:grid-cols-2 grid-cols-1 gap-10"
       >
         <div className="flex flex-col space-y-3">

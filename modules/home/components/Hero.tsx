@@ -20,7 +20,8 @@ export default function Hero() {
         <div className="lg:col-span-3 space-y-5 h-screen flex flex-col justify-center">
           <motion.div
             initial={{ opacity: 0, x: -100 }}
-            animate={{ opacity: 1, x: 0 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.3 }}
             className="flex flex-col gap-5 md:items-start items-center"
           >

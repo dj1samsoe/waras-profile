@@ -6,7 +6,7 @@ import Breakline from "../../elements/Breakline";
 export const MobileMenu: FC = () => {
   return (
     <motion.div
-      className="h-screen max-w-screen flex flex-col bg-[#343045]"
+      className="h-fit w-full flex flex-col bg-[#343045] pb-5"
       initial={{ y: -100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.3 }}

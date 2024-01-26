@@ -14,6 +14,7 @@ export default function Service() {
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
         className="grid md:grid-cols-2 grid-cols-1 gap-10"
       >
         <div className="flex flex-col space-y-3">
@@ -38,6 +39,7 @@ export default function Service() {
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
         className="md:text-2xl text-xl font-medium text-white py-10 text-center"
       >
         Paket Manual/Matic
@@ -48,6 +50,7 @@ export default function Service() {
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: index * 0.1 }}
+            viewport={{ once: true }}
           >
             <Card
               key={index}
@@ -76,6 +79,7 @@ export default function Service() {
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
         className="flex justify-center py-10"
       >
         <Link
