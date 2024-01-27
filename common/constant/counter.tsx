@@ -5,7 +5,7 @@ import { FaClockRotateLeft } from "react-icons/fa6";
 export const COUNTER = [
   {
     icon: (
-      <FaAddressCard className="absolute bottom-3 right-1 w-16 h-16 -z[50] text-white/10" />
+      <FaAddressCard className="absolute bottom-3 right-1 w-16 h-16 -z[50] text-quaternary-black/10" />
     ),
     total: 200,
     span: "+",
@@ -13,7 +13,7 @@ export const COUNTER = [
   },
   {
     icon: (
-      <FaChartLine className="absolute bottom-3 -right-1 w-16 h-16 -z[50] text-white/10" />
+      <FaChartLine className="absolute bottom-3 -right-1 w-16 h-16 -z[50] text-quaternary-black/10" />
     ),
     total: 10,
     span: "+",
@@ -21,7 +21,7 @@ export const COUNTER = [
   },
   {
     icon: (
-      <FaClockRotateLeft className="absolute bottom-3 right-2 w-14 h-14 -z[50] text-white/10" />
+      <FaClockRotateLeft className="absolute bottom-3 right-2 w-14 h-14 -z[50] text-quaternary-black/10" />
     ),
     total: 500,
     span: "+",
@@ -29,7 +29,7 @@ export const COUNTER = [
   },
   {
     icon: (
-      <BsBuildingGear className="absolute bottom-3 right-2 w-14 h-14 -z[50] text-white/10" />
+      <BsBuildingGear className="absolute bottom-3 right-2 w-14 h-14 -z[50] text-quaternary-black/10" />
     ),
     total: 3,
     span: "+",

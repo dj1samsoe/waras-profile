@@ -13,7 +13,7 @@ export default function Card({
 }: CardProps) {
   return (
     <div
-      className={`rounded-xl transition-all duration-300 shadow-sm lg:hover:shadow-md ${className} `}
+      className={`rounded-xl transition-all duration-300 shadow-lg lg:hover:shadow-lg ${className} `}
       {...others}
       data-testid="card"
     >

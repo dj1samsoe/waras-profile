@@ -5,13 +5,16 @@ import { motion } from "framer-motion";
 
 export default function About() {
   return (
-    <section className="max-w-screen-2xl md:px-20 px-5 py-20" id="tentang">
+    <section
+      className="max-w-screen-2xl md:px-20 px-5 py-20 text-quaternary-black"
+      id="tentang"
+    >
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
-        className="grid md:grid-cols-2 grid-cols-1 gap-10"
+        className="grid md:grid-cols-2 grid-cols-1 gap-10 pt-5"
       >
         <Image
           src="/about.webp"
@@ -23,10 +26,10 @@ export default function About() {
 
         <div className="flex flex-col space-y-5">
           <div className="flex flex-col space-y-2 md:items-start items-center">
-            <span className="md:text-xl text-lg font-semibold">
+            <span className="md:text-xl text-lg font-semibold text-tertiary-red">
               Tentang Kami
             </span>
-            <h1 className="md:text-3xl text-2xl font-semibold text-white">
+            <h1 className="md:text-3xl text-2xl font-semibold">
               Kursus Mengemudi Waras
             </h1>
           </div>

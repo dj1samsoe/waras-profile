@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export default function Introduction() {
   return (
-    <section className="max-w-screen-2xl md:px-20 px-5 py-20">
+    <section className="max-w-screen-2xl md:px-20 px-5 py-20 text-quaternary-black">
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -18,10 +18,10 @@ export default function Introduction() {
             Mari Berkenalan dengan
           </p>
           <div className="flex gap-3">
-            <h1 className="md:text-3xl text-2xl font-semibold text-white">
+            <h1 className="md:text-3xl text-2xl font-semibold">
               Kursus Mengemudi Waras
             </h1>
-            <Image src="/arrow.svg" alt="logo" width={100} height={100} />
+            <Image src="/arrow-2.svg" alt="logo" width={100} height={100} />
           </div>
         </div>
         <p>

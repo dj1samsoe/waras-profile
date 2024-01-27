@@ -17,7 +17,7 @@ export default function MenuHeader({
     <div className={clsx("flex")}>
       <Link href={"/"} aria-label="Home" className="cursor-pointer">
         <Image
-          src={"/logo.png"}
+          src={"/logo-2.png"}
           alt="navbar-logo"
           width={expandMenu ? 175 : imageSize * 0.9}
           height={expandMenu ? 175 : imageSize * 0.9}

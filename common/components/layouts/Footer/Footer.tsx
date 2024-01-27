@@ -5,7 +5,7 @@ import { FaXTwitter } from "react-icons/fa6";
 
 export default function Footer() {
   return (
-    <footer className="footer footer-center p-10 bg-base-200 text-base-content rounded">
+    <footer className="footer footer-center p-10 bg-quaternary-black text-primary-white rounded">
       <nav className="grid grid-flow-col gap-4">
         <Link href="#tentang" className="link link-hover" aria-label="Tentang">
           Tentang

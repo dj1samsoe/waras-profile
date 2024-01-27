@@ -10,7 +10,7 @@ import { COUNTER } from "@/common/constant/counter";
 
 export default function Counter() {
   return (
-    <section className="max-w-screen-2xl md:px-20 px-5 py-20">
+    <section className="max-w-screen-2xl md:px-20 px-5 py-20 text-quaternary-black">
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -19,14 +19,14 @@ export default function Counter() {
         className="grid md:grid-cols-2 grid-cols-1 gap-10"
       >
         <div className="flex flex-col space-y-3">
-          <p className="md:text-xl text-lg font-semibold">
+          <p className="md:text-xl text-lg font-semibold text-tertiary-red">
             Buktikan hasilnya hanya di
           </p>
           <div className="flex gap-3">
-            <h1 className="md:text-3xl text-2xl font-semibold text-white">
+            <h1 className="md:text-3xl text-2xl font-semibold">
               Kursus Mengemudi Waras
             </h1>
-            <Image src="/arrow.svg" alt="logo" width={100} height={100} />
+            <Image src="/arrow-2.svg" alt="logo" width={100} height={100} />
           </div>
         </div>
         <div className="grid lg:grid-cols-4 grid-cols-2 lg:gap-5 gap-8 md:pt-0 pt-3">
@@ -36,7 +36,7 @@ export default function Counter() {
                 {item.icon}
                 <AnimateCounter
                   total={item.total}
-                  className="font-semibold text-4xl text-white"
+                  className="font-semibold text-4xl"
                 />
                 <span className="font-semibold text-4xl">{item.span}</span>
               </div>

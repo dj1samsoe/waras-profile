@@ -9,23 +9,26 @@ import { SERVICE } from "@/common/constant/service";
 
 export default function Service() {
   return (
-    <section className="max-w-screen-2xl md:px-20 px-5 py-20" id="pelayanan">
+    <section
+      className="max-w-screen-2xl md:px-20 px-5 py-20 text-quaternary-black"
+      id="pelayanan"
+    >
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
-        className="grid md:grid-cols-2 grid-cols-1 gap-10"
+        className="grid md:grid-cols-2 grid-cols-1 gap-10 pt-5"
       >
         <div className="flex flex-col space-y-3">
-          <p className="md:text-xl text-lg font-semibold">
+          <p className="md:text-xl text-lg font-semibold text-tertiary-red">
             Pilihan Paket yang tersedia di
           </p>
           <div className="flex gap-3">
-            <h1 className="md:text-3xl text-2xl font-semibold text-white">
+            <h1 className="md:text-3xl text-2xl font-semibold">
               Kursus Mengemudi Waras
             </h1>
-            <Image src="/arrow.svg" alt="logo" width={100} height={100} />
+            <Image src="/arrow-2.svg" alt="logo" width={100} height={100} />
           </div>
         </div>
         <p>
@@ -40,7 +43,7 @@ export default function Service() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
-        className="md:text-2xl text-xl font-medium text-white py-10 text-center"
+        className="md:text-2xl text-xl font-medium py-10 text-center"
       >
         Paket Manual/Matic
       </motion.h1>
@@ -54,17 +57,17 @@ export default function Service() {
           >
             <Card
               key={index}
-              className="flex flex-col space-y-10 items-center bg-[#46415d] py-10 h-[20rem] hover:-translate-y-3 transition-all duration-200"
+              className="flex flex-col space-y-10 items-center bg-white py-10 h-[20rem] hover:-translate-y-3 transition-all duration-200"
             >
-              <h1 className="md:text-2xl text-xl font-medium text-white text-center">
+              <h1 className="md:text-2xl text-xl font-medium text-center">
                 {item.title}
               </h1>
               <p>
-                <sup className="text-xl text-white/80">{item.sup}</sup>
-                <span className="text-5xl font-semibold text-white">
+                <sup className="text-xl">{item.sup}</sup>
+                <span className="text-5xl font-semibold text-tertiary-red">
                   {item.price}
                 </span>
-                <sub className="text-xl text-white/80">{item.sub}</sub>
+                <sub className="text-xl">{item.sub}</sub>
               </p>
               <div className="flex flex-col space-y-2 items-center text-md">
                 <p>{item.description1}</p>
@@ -85,7 +88,7 @@ export default function Service() {
         <Link
           href="https://wa.me/6289679047230/"
           target="_blank"
-          className="px-5 py-3 rounded-full bg-gradient-to-r from-[#8176AF] to-[#C0B7E8] md:text-lg text-md text-[#303045] hover:text-white flex items-center gap-3 hover:bg-gradient-to-r hover:from-[#342F48] hover:to-[#9586D9] transition-all duration-300 max-w-[16rem]"
+          className="px-5 py-3 rounded-full md:text-lg text-md bg-tertiary-red text-primary-white flex items-center gap-3 hover:bg-tertiary-red/90 hover:shadow-lg transition-all duration-300 max-w-[16rem]"
         >
           <MdWhatsapp className="w-6 h-6" />
           Hubungi Sekarang

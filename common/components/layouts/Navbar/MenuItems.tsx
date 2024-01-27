@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function MenuItems() {
   return (
     <div className="flex items-center">
-      <ul className="flex gap-5 items-center text-white">
+      <ul className="flex gap-5 items-center">
         <li>
           <Link href={"#tentang"} aria-label="Tentang">
             Tentang
