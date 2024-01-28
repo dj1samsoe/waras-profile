@@ -22,7 +22,7 @@ export default function Service() {
         className="grid md:grid-cols-2 grid-cols-1 gap-10 pt-5"
       >
         <div className="flex flex-col space-y-3">
-          <p className="md:text-xl text-lg font-semibold text-tertiary-red">
+          <p className="md:text-xl text-lg font-semibold text-secondary-purple">
             Pilihan Paket yang tersedia di
           </p>
           <div className="flex gap-3">
