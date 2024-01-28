@@ -6,6 +6,7 @@ import Facilities from "./Facilities";
 import About from "./About";
 import Service from "./Service";
 import Contact from "./Contact";
+import Testimonial from "./Testimonial";
 
 export default function HomePage() {
   return (
@@ -16,6 +17,7 @@ export default function HomePage() {
       <Counter />
       <Facilities />
       <Service />
+      <Testimonial />
       <Contact />
     </>
   );

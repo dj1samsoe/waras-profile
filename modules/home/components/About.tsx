@@ -26,14 +26,14 @@ export default function About() {
 
         <div className="flex flex-col space-y-5">
           <div className="flex flex-col space-y-2 md:items-start items-center">
-            <span className="md:text-xl text-lg font-semibold text-tertiary-red">
+            <span className="md:text-xl text-lg font-semibold text-secondary-purple">
               Tentang Kami
             </span>
             <h1 className="md:text-3xl text-2xl font-semibold">
               Kursus Mengemudi Waras
             </h1>
           </div>
-          <p>
+          <p className="text-md font-openSans">
             Sebagai penyedia pelatihan mengemudi yang berpengalaman, Kursus
             Mengemudi Waras tidak hanya menawarkan kelas yang memenuhi
             persyaratan untuk mendapatkan izin mengemudi, tetapi juga memberikan

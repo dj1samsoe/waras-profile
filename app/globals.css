@@ -7,14 +7,14 @@
 } */
 
 :root {
-  --primary: #d63484;
+  --primary: #b56fb4;
 }
 
 * {
   scroll-behavior: smooth;
 }
 
-nav ul li a::after {
+nav ul li::after {
   content: "";
   display: block;
   padding-bottom: 0.5rem;
@@ -23,7 +23,7 @@ nav ul li a::after {
   transition: 0.2s;
 }
 
-nav ul li a:hover::after {
+nav ul li:hover::after {
   transform: scaleX(0.7);
 }
 

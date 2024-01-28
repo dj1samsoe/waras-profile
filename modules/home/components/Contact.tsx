@@ -24,7 +24,7 @@ export default function Contact() {
             Kursus Mengemudi Waras
           </h1>
         </div>
-        <Breakline className="w-24 border-2" />
+        <Breakline className="w-24 border-2 border-primary-purple" />
       </motion.div>
       <motion.iframe
         initial={{ opacity: 0, y: 50 }}

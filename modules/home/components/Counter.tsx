@@ -19,26 +19,31 @@ export default function Counter() {
         className="grid md:grid-cols-2 grid-cols-1 gap-10"
       >
         <div className="flex flex-col space-y-3">
-          <p className="md:text-xl text-lg font-semibold text-tertiary-red">
+          <p className="md:text-xl text-lg font-semibold text-secondary-purple">
             Buktikan hasilnya hanya di
           </p>
           <div className="flex gap-3">
             <h1 className="md:text-3xl text-2xl font-semibold">
               Kursus Mengemudi Waras
             </h1>
-            <Image src="/arrow-2.svg" alt="logo" width={100} height={100} />
+            <Image src="/arrow-3.svg" alt="logo" width={100} height={100} />
           </div>
         </div>
         <div className="grid lg:grid-cols-4 grid-cols-2 lg:gap-5 gap-8 md:pt-0 pt-3">
           {COUNTER?.map((item, index) => (
-            <div key={index} className="flex flex-col items-center">
+            <div
+              key={index}
+              className="flex flex-col items-center font-openSans"
+            >
               <div className="relative">
                 {item.icon}
-                <AnimateCounter
-                  total={item.total}
-                  className="font-semibold text-4xl"
-                />
-                <span className="font-semibold text-4xl">{item.span}</span>
+                <div className="flex items-center gap-0">
+                  <AnimateCounter
+                    total={item.total}
+                    className="font-semibold text-5xl"
+                  />
+                  <span className="font-semibold text-4xl">{item.span}</span>
+                </div>
               </div>
               <p className="font-medium text-md text-center">{item.title}</p>
             </div>

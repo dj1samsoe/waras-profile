@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 import { METADATA } from "@/common/constant/metadata";
 import Layouts from "@/common/components/layouts";

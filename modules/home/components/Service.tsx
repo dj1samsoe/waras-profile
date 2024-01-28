@@ -5,7 +5,8 @@ import React from "react";
 import Image from "next/image";
 import { MdWhatsapp } from "react-icons/md";
 import { motion } from "framer-motion";
-import { SERVICE } from "@/common/constant/service";
+import { MANUAL, MATIC } from "@/common/constant/service";
+import Breakline from "@/common/components/elements/Breakline";
 
 export default function Service() {
   return (
@@ -28,27 +29,30 @@ export default function Service() {
             <h1 className="md:text-3xl text-2xl font-semibold">
               Kursus Mengemudi Waras
             </h1>
-            <Image src="/arrow-2.svg" alt="logo" width={100} height={100} />
+            <Image src="/arrow-3.svg" alt="logo" width={100} height={100} />
           </div>
         </div>
-        <p>
+        <p className="text-md font-openSans">
           Kami menawarkan Paket Latihan Manual dan Matic yang tentu saja dengan
           harga bersaing dan pelayanan yang maksimal. Kita akan diajarkan mulai
           dari dasar seperti pengenalan bagian-bagian mobil, pedal gas, kopling,
           rem, tanjakan atau turunan, dan juga parkir.
         </p>
       </motion.div>
-      <motion.h1
+      <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
-        className="md:text-2xl text-xl font-medium py-10 text-center"
+        className="flex flex-col items-center py-10"
       >
-        Paket Manual/Matic
-      </motion.h1>
+        <h1 className="md:text-2xl text-xl font-medium text-center">
+          Paket Manual
+        </h1>
+        <Breakline className="w-24 text-center border-2 border-primary-purple" />
+      </motion.div>
       <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 gap-7 ">
-        {SERVICE?.map((item, index) => (
+        {MANUAL?.map((item, index) => (
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -57,12 +61,12 @@ export default function Service() {
           >
             <Card
               key={index}
-              className="flex flex-col space-y-10 items-center bg-white py-10 h-[20rem] hover:-translate-y-3 transition-all duration-200"
+              className="flex flex-col space-y-5 items-center justify-between bg-white py-10 h-[24rem] hover:-translate-y-3 transition-all duration-200 font-openSans"
             >
               <h1 className="md:text-2xl text-xl font-medium text-center">
                 {item.title}
               </h1>
-              <p>
+              <p className="flex gap-1 items-end">
                 <sup className="text-xl">{item.sup}</sup>
                 <span className="text-5xl font-semibold text-tertiary-red">
                   {item.price}
@@ -74,6 +78,65 @@ export default function Service() {
                 <p>{item.description2}</p>
                 <p>{item.description3}</p>
               </div>
+              <Link
+                href={item.href}
+                target="_blank"
+                aria-label="Klik"
+                className="px-5 py-2 rounded-full bg-primary-purple text-primary-white hover:shadow-lg hover:bg-secondary-purple transition-all duration-200"
+              >
+                Daftar Disini
+              </Link>
+            </Card>
+          </motion.div>
+        ))}
+      </div>
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+        className="flex flex-col items-center py-10"
+      >
+        <h1 className="md:text-2xl text-xl font-medium text-center">
+          Paket Matic
+        </h1>
+        <Breakline className="w-24 text-center border-2 border-primary-purple" />
+      </motion.div>
+      <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 gap-7 ">
+        {MATIC?.map((item, index) => (
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: index * 0.1 }}
+            viewport={{ once: true }}
+          >
+            <Card
+              key={index}
+              className="flex flex-col space-y-5 items-center justify-between bg-white py-10 h-[24rem] hover:-translate-y-3 transition-all duration-200 font-openSans"
+            >
+              <h1 className="md:text-2xl text-xl font-medium text-center">
+                {item.title}
+              </h1>
+              <p className="flex gap-1 items-end">
+                <sup className="text-xl">{item.sup}</sup>
+                <span className="text-5xl font-semibold text-tertiary-red">
+                  {item.price}
+                </span>
+                <sub className="text-xl">{item.sub}</sub>
+              </p>
+              <div className="flex flex-col space-y-2 items-center text-md">
+                <p>{item.description1}</p>
+                <p>{item.description2}</p>
+                <p>{item.description3}</p>
+              </div>
+              <Link
+                href={item.href}
+                target="_blank"
+                aria-label="Klik"
+                className="px-5 py-2 rounded-full bg-primary-purple text-primary-white hover:shadow-lg hover:bg-secondary-purple transition-all duration-200"
+              >
+                Daftar Disini
+              </Link>
             </Card>
           </motion.div>
         ))}

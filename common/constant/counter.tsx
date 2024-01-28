@@ -5,23 +5,23 @@ import { FaClockRotateLeft } from "react-icons/fa6";
 export const COUNTER = [
   {
     icon: (
-      <FaAddressCard className="absolute bottom-3 right-1 w-16 h-16 -z[50] text-quaternary-black/10" />
+      <FaAddressCard className="absolute bottom-3 right-1 w-16 h-16 -z[50] text-secondary-purple/20" />
     ),
     total: 200,
     span: "+",
-    title: "Lulusan Mengemudi",
+    title: "Siswa Mengemudi",
   },
   {
     icon: (
-      <FaChartLine className="absolute bottom-3 -right-1 w-16 h-16 -z[50] text-quaternary-black/10" />
+      <FaChartLine className="absolute bottom-3 -right-7 w-16 h-16 -z[50] text-secondary-purple/20" />
     ),
-    total: 10,
+    total: 5.0,
     span: "+",
-    title: "Pengalaman",
+    title: "Rating",
   },
   {
     icon: (
-      <FaClockRotateLeft className="absolute bottom-3 right-2 w-14 h-14 -z[50] text-quaternary-black/10" />
+      <FaClockRotateLeft className="absolute bottom-3 right-2 w-14 h-14 -z[50] text-secondary-purple/20" />
     ),
     total: 500,
     span: "+",
@@ -29,7 +29,7 @@ export const COUNTER = [
   },
   {
     icon: (
-      <BsBuildingGear className="absolute bottom-3 right-2 w-14 h-14 -z[50] text-quaternary-black/10" />
+      <BsBuildingGear className="absolute bottom-3 -right-2 w-14 h-14 -z[50] text-secondary-purple/20" />
     ),
     total: 3,
     span: "+",

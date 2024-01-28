@@ -1,5 +1,7 @@
+"use client";
 import styled from "@emotion/styled";
 import clsx from "clsx";
+import { useState, useEffect } from "react";
 
 interface MobileMenuButtonProps {
   expandMenu: boolean;
@@ -16,12 +18,33 @@ const MobileMenuButton = ({
 
   const menuSpanData = [{ index: 1 }, { index: 2 }, { index: 3 }];
 
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        setIsVisible(true);
+      } else {
+        setIsVisible(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <StyledMenu className="flex lg:hidden" onClick={handleMenuToggle}>
       {menuSpanData.map((item) => (
         <StyledMenuSpan
           key={item.index}
-          className={clsx("bg-quaternary-black ", expandMenu && "active")}
+          className={clsx(
+            isVisible ? "bg-quaternary-black " : "bg-primary-white",
+            expandMenu && "active"
+          )}
         />
       ))}
     </StyledMenu>

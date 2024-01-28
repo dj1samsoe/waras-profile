@@ -14,20 +14,22 @@ export default function Introduction() {
         className="grid md:grid-cols-2 grid-cols-1 gap-10"
       >
         <div className="flex flex-col space-y-3">
-          <p className="md:text-xl text-lg font-semibold">
+          <p className="md:text-xl text-lg font-semibold text-secondary-purple">
             Mari Berkenalan dengan
           </p>
           <div className="flex gap-3">
             <h1 className="md:text-3xl text-2xl font-semibold">
               Kursus Mengemudi Waras
             </h1>
-            <Image src="/arrow-2.svg" alt="logo" width={100} height={100} />
+            <Image src="/arrow-3.svg" alt="logo" width={100} height={100} />
           </div>
         </div>
-        <p>
+        <p className="text-md font-openSans flex flex-col">
           Selamat datang di Kursus Mengemudi Waras, tempat di mana perjalanan
           Anda menuju keahlian mengemudi yang aman dan percaya diri dimulai!
-          Buktikan kemampuanmu dengan Kursus Mengemudi Waras.
+          <span className="font-semibold">
+            Buktikan kemampuanmu dengan Kursus Mengemudi Waras.
+          </span>
         </p>
       </motion.div>
     </section>

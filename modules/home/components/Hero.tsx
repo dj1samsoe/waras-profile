@@ -16,7 +16,7 @@ export default function Hero() {
         backgroundPosition: "bottom, center",
       }}
     >
-      <div className="grid lg:grid-cols-5 md:grid-cols-2 grid-cols-1 md:px-20 px-5 max-w-screen-2xl bg-gradient-to-r from-tertiary-red to-secondary-pink/20">
+      <div className="grid lg:grid-cols-5 md:grid-cols-2 grid-cols-1 md:px-20 px-5 max-w-screen-2xl bg-gradient-to-r from-primary-purple to-secondary-purple/20">
         <div className="lg:col-span-3 space-y-5 h-screen flex flex-col justify-center">
           <motion.div
             initial={{ opacity: 0, x: -100 }}
@@ -25,17 +25,18 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="flex flex-col gap-5 md:items-start items-center"
           >
-            <h1 className="md:text-5xl text-4xl font-semibold md:text-start text-center">
+            <h1 className="md:text-5xl text-4xl font-semibold md:text-start text-center font-montserrat">
               Kursus Mengemudi Terbaik di Krian
             </h1>
-            <p className="md:text-lg text-md md:text-start text-center">
-              Kursus Mengemudi Manual atau Matic dan Pembuatan SIM dengan harga
-              bersaing dan pelayanan maksimal
+            <p className="md:text-lg text-md md:text-start text-center font-openSans">
+              Kursus Mengemudi Manual atau Matic dengan harga bersaing dan
+              pelayanan maksimal. Kami juga menyediakan jasa pengurusan SIM A
+              maupun C dengan pelayanan terbaik
             </p>
             <Link
-              href="https://wa.me/6289679047230/"
+              href="https://api.whatsapp.com/send?phone=6289679047230&text=Halo%2C%20Saya%20tertarik%20dengan%20Kursus%20Mengemudi%20Waras.%20Apakah%20bisa%20berkomunikasi%20lebih%20lanjut%3F"
               target="_blank"
-              className="px-5 py-3 rounded-full bg-quaternary-black md:text-lg text-md text-primary-white hover:text-white flex items-center gap-3 hover:bg-quaternary-black/80 transition-all duration-300 max-w-[16rem]"
+              className="px-5 py-3 font-openSans rounded-full bg-quaternary-black md:text-lg text-md text-primary-white flex items-center gap-3 hover:bg-quaternary-black/80 transition-all duration-300 max-w-[16rem]"
             >
               <MdWhatsapp className="w-6 h-6" />
               Hubungi Sekarang

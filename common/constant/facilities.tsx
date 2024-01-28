@@ -1,6 +1,6 @@
 import { CiFaceSmile } from "react-icons/ci";
-import { FaRegHandshake } from "react-icons/fa";
-import { GrHostMaintenance, GrSchedule } from "react-icons/gr";
+import { FaRegAddressCard, FaRegHandshake } from "react-icons/fa";
+import { GrSchedule } from "react-icons/gr";
 import { IoMdPricetags } from "react-icons/io";
 import { IoCarOutline } from "react-icons/io5";
 
@@ -27,12 +27,12 @@ export const FACILITIES = [
   },
   {
     image: "/about.webp",
-    icon: <GrHostMaintenance className="w-14 h-14 text-white/50" />,
-    title: "Maintenance Rutin",
+    icon: <IoCarOutline className="w-20 h-20 text-white/50" />,
+    title: "Antar Jemput",
   },
   {
     image: "/about.webp",
-    icon: <IoCarOutline className="w-20 h-20 text-white/50" />,
-    title: "Gratis Antar Jemput",
+    icon: <FaRegAddressCard className="w-14 h-14 text-white/50" />,
+    title: "Pengurusan SIM",
   },
 ];
