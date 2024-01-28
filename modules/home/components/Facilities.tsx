@@ -33,7 +33,7 @@ export default function Facilities() {
           </h1>
         </div>
         <Breakline className="w-24 border-2 border-primary-purple" />
-        <p className="text-md font-openSans">
+        <p className="text-lg font-openSans">
           Beberapa keunggulan yang kami miliki untuk menjaga kualitas dan mutu
           pengajaran yang baik
         </p>

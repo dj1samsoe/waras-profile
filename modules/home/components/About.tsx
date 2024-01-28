@@ -33,7 +33,7 @@ export default function About() {
               Kursus Mengemudi Waras
             </h1>
           </div>
-          <p className="text-md font-openSans">
+          <p className="text-lg font-openSans">
             Sebagai penyedia pelatihan mengemudi yang berpengalaman, Kursus
             Mengemudi Waras tidak hanya menawarkan kelas yang memenuhi
             persyaratan untuk mendapatkan izin mengemudi, tetapi juga memberikan

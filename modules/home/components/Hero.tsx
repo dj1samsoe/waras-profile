@@ -25,10 +25,10 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="flex flex-col gap-5 md:items-start items-center"
           >
-            <h1 className="md:text-5xl text-4xl font-semibold md:text-start text-center font-montserrat">
+            <h1 className="md:text-5xl text-4xl font-semibold md:text-start text-center">
               Kursus Mengemudi Terbaik di Krian
             </h1>
-            <p className="md:text-lg text-md md:text-start text-center font-openSans">
+            <p className="text-lg md:text-start text-center font-openSans">
               Kursus Mengemudi Manual atau Matic dengan harga bersaing dan
               pelayanan maksimal. Kami juga menyediakan jasa pengurusan SIM A
               maupun C dengan pelayanan terbaik

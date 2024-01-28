@@ -24,7 +24,7 @@ export default function Introduction() {
             <Image src="/arrow-3.svg" alt="logo" width={100} height={100} />
           </div>
         </div>
-        <p className="text-md font-openSans flex flex-col">
+        <p className="text-lg font-openSans flex flex-col">
           Selamat datang di Kursus Mengemudi Waras, tempat di mana perjalanan
           Anda menuju keahlian mengemudi yang aman dan percaya diri dimulai!
           <span className="font-semibold">

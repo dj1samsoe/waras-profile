@@ -31,10 +31,7 @@ export default function Counter() {
         </div>
         <div className="grid lg:grid-cols-4 grid-cols-2 lg:gap-5 gap-8 md:pt-0 pt-3">
           {COUNTER?.map((item, index) => (
-            <div
-              key={index}
-              className="flex flex-col items-center font-openSans"
-            >
+            <div key={index} className="flex flex-col items-center">
               <div className="relative">
                 {item.icon}
                 <div className="flex items-center gap-0">

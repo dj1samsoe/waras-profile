@@ -32,7 +32,7 @@ export default function Service() {
             <Image src="/arrow-3.svg" alt="logo" width={100} height={100} />
           </div>
         </div>
-        <p className="text-md font-openSans">
+        <p className="text-lg font-openSans">
           Kami menawarkan Paket Latihan Manual dan Matic yang tentu saja dengan
           harga bersaing dan pelayanan yang maksimal. Kita akan diajarkan mulai
           dari dasar seperti pengenalan bagian-bagian mobil, pedal gas, kopling,
@@ -61,14 +61,14 @@ export default function Service() {
           >
             <Card
               key={index}
-              className="flex flex-col space-y-5 items-center justify-between bg-white py-10 h-[24rem] hover:-translate-y-3 transition-all duration-200 font-openSans"
+              className="flex flex-col space-y-5 items-center justify-between bg-white py-10 h-[24rem] hover:-translate-y-3 transition-all duration-200"
             >
               <h1 className="md:text-2xl text-xl font-medium text-center">
                 {item.title}
               </h1>
               <p className="flex gap-1 items-end">
                 <sup className="text-xl">{item.sup}</sup>
-                <span className="text-5xl font-semibold text-tertiary-red">
+                <span className="text-5xl font-semibold text-primary-purple">
                   {item.price}
                 </span>
                 <sub className="text-xl">{item.sub}</sub>
@@ -112,14 +112,14 @@ export default function Service() {
           >
             <Card
               key={index}
-              className="flex flex-col space-y-5 items-center justify-between bg-white py-10 h-[24rem] hover:-translate-y-3 transition-all duration-200 font-openSans"
+              className="flex flex-col space-y-5 items-center justify-between bg-white py-10 h-[24rem] hover:-translate-y-3 transition-all duration-200"
             >
               <h1 className="md:text-2xl text-xl font-medium text-center">
                 {item.title}
               </h1>
               <p className="flex gap-1 items-end">
                 <sup className="text-xl">{item.sup}</sup>
-                <span className="text-5xl font-semibold text-tertiary-red">
+                <span className="text-5xl font-semibold text-primary-purple">
                   {item.price}
                 </span>
                 <sub className="text-xl">{item.sub}</sub>

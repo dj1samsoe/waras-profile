@@ -29,7 +29,7 @@ export default function Testimonial() {
           </h1>
         </div>
         <Breakline className="w-24 border-2 border-primary-purple" />
-        <p className="text-md font-openSans text-center">
+        <p className="text-lg font-openSans text-center">
           Beberapa pendapat dari mereka yang telah mengikuti kursus kami
         </p>
       </motion.div>
