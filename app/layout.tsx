@@ -3,6 +3,7 @@ import "./globals.css";
 import { METADATA } from "@/common/constant/metadata";
 import Layouts from "@/common/components/layouts";
 import { montserrat } from "@/common/styles/font";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
   description: METADATA.description,
@@ -23,6 +24,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={montserrat.className}>
         <Layouts>{children}</Layouts>
+        {process.env.NODE_ENV === "production" && <Analytics />}
       </body>
     </html>
   );
