@@ -27,6 +27,11 @@ const config: Config = {
       },
     },
   },
-  plugins: [require("daisyui")],
+  variants: {
+    extend: {
+      lineClamp: ["hover", "focus"],
+    },
+  },
+  plugins: [require("daisyui"), require("@tailwindcss/line-clamp")],
 };
 export default config;

@@ -8,9 +8,11 @@ import Image from "next/image";
 import Breakline from "@/common/components/elements/Breakline";
 import { motion } from "framer-motion";
 import { GoStarFill } from "react-icons/go";
+import { FaCircle } from "react-icons/fa";
 
 export default function Testimonial() {
   const isMobile = useIsMobile();
+
   return (
     <section className="max-w-screen-2xl min-h-screen md:px-20 px-5 text-quaternary-black">
       <motion.div
@@ -36,21 +38,49 @@ export default function Testimonial() {
       <Carousel
         autoplay
         autoplayInterval={3000}
+        wrapAround={true}
         cellSpacing={24}
         slidesToShow={isMobile ? 1 : 3}
         renderCenterLeftControls={({ previousSlide }) => null}
         renderCenterRightControls={({ nextSlide }) => null}
+        renderBottomCenterControls={({
+          slideCount,
+          currentSlide,
+          goToSlide,
+        }) => (
+          <div className="slider-control-bottomcenter">
+            <ul className="flex gap-1">
+              {Array.from({ length: slideCount }).map((_, index) => (
+                <li key={index}>
+                  <button
+                    onClick={() => goToSlide(index)}
+                    style={{
+                      color: index === currentSlide ? "purple" : "gray",
+                    }}
+                  >
+                    <FaCircle size={10} />
+                  </button>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
         className="py-10"
       >
         {REVIEW?.map((items, index) => (
           <Card
             key={index}
-            className="flex flex-col items-start space-y-5 px-5 py-10 bg-white h-[28rem]"
+            className="flex flex-col items-start space-y-7 px-5 py-10 bg-white min-h-[20rem]"
           >
             <div className="flex gap-3 items-center">
-              <Image src={items.image} alt="logo" width={75} height={75} />
+              <Image
+                src={items.image}
+                alt="image-reviewers"
+                width={50}
+                height={50}
+              />
               <div className="flex flex-col space-y-2">
-                <h1 className="text-lg font-semibold">{items.nama}</h1>
+                <h1 className="text-md font-semibold">{items.nama}</h1>
                 <div className="flex items-center gap-2">
                   <div className="flex gap-0 text-yellow-300">
                     <GoStarFill />
@@ -63,7 +93,9 @@ export default function Testimonial() {
                 </div>
               </div>
             </div>
-            <p className="text-md font-openSans">{items.review}</p>
+            <p className="text-md font-openSans line-clamp-6 hover:line-clamp-none">
+              {items.review}
+            </p>
           </Card>
         ))}
       </Carousel>

@@ -17,7 +17,7 @@ export default function Contact() {
         className="flex flex-col space-y-5 items-center text-center pt-5"
       >
         <div className="flex flex-col space-y-3">
-          <p className="md:text-xl text-lg font-semibold text-tertiary-red">
+          <p className="md:text-xl text-lg font-semibold text-secondary-purple">
             Informasi Kontak & Lokasi
           </p>
           <h1 className="md:text-3xl text-2xl font-semibold">

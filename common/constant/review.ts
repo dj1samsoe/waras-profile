@@ -8,7 +8,7 @@ export const REVIEW = [
   },
   {
     nama: "Solichatul Janna",
-    image: "/avatar.webp",
+    image: "/review-solichah.png",
     review:
       "G perlu diragukan lagi kursus disini. Yg ngajar baik, cekatan, suabar, jadwal bisa menyesuaikan siswa, bisa dijemput jg.. mas nya ramah sekali, sampai berasa kyk teman sendiri, belajar nya g boring.. asik bngt..Sesuai dg yg di bilang. Mas yg ngajar Baik, sabar, masih muda, banyak yg suka😄😄. Semoga ilmu yg d berikan bisa bermanfaat, dan kursus nya semakin bnyk siswa nya..Aamiin..ありがとう ナンダ せんせい",
     time: "5 bulan lalu",
@@ -19,5 +19,26 @@ export const REVIEW = [
     review:
       "Ini tempat kursus yang selama ini saya tau dan yang ngajarin orang nya masih muda dan orang nya enak banget",
     time: "sebulan lalu",
+  },
+  {
+    nama: "Arif Huda",
+    image: "/review-arif.png",
+    review:
+      ' Terima kasih sebanyak"nya buat Mas Nanda. Yang telah sabar mengajari saya mulai dari Nol. Terima kasih juga buat tips & trik jitu nya. Jadwal kursus juga sangat fleksibel.',
+    time: "3 bulan lalu",
+  },
+  {
+    nama: "Nabilah Daffa Puspalohita",
+    image: "/review-nabilah.png",
+    review:
+      "worth banget kalau mau les nyetir di sini! gaperlu takut canggung karena masnya baik dan sabar banget ngajarinnya🤩 …",
+    time: "sebulan lalu",
+  },
+  {
+    nama: "Ririn Trilivina",
+    image: "/review-ririn.png",
+    review:
+      "Recomended bget dech... Instruktur yg baik, sopan, ramah,..di ksih trik2 agar cpat bisa & penanaman kepercayaan diri oke bget... 3x ikut kursus...lgsg bisa bawa mobil sendiri kmn2... Trimaksih bnyak mas nanda..🙏🙏😊",
+    time: "7 bulan lalu",
   },
 ];
