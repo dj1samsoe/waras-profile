@@ -19,7 +19,7 @@ export default function Counter() {
         className="grid md:grid-cols-2 grid-cols-1 gap-10"
       >
         <div className="flex flex-col space-y-3">
-          <p className="md:text-xl text-lg font-semibold text-secondary-purple">
+          <p className="md:text-xl text-lg font-semibold text-primary-purple">
             Buktikan hasilnya hanya di
           </p>
           <div className="flex gap-3">

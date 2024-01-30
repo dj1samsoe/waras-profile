@@ -22,7 +22,7 @@ export default function Service() {
         className="grid md:grid-cols-2 grid-cols-1 gap-10 pt-5"
       >
         <div className="flex flex-col space-y-3">
-          <p className="md:text-xl text-lg font-semibold text-secondary-purple">
+          <p className="md:text-xl text-lg font-semibold text-primary-purple">
             Pilihan Paket yang tersedia di
           </p>
           <div className="flex gap-3">
@@ -58,11 +58,9 @@ export default function Service() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: index * 0.1 }}
             viewport={{ once: true }}
+            key={index}
           >
-            <Card
-              key={index}
-              className="flex flex-col space-y-5 items-center justify-between bg-white py-10 h-[24rem] hover:-translate-y-3 transition-all duration-200"
-            >
+            <Card className="flex flex-col space-y-5 items-center justify-between bg-white py-10 h-[24rem] hover:-translate-y-3 transition-all duration-200">
               <h1 className="md:text-2xl text-xl font-medium text-center">
                 {item.title}
               </h1>

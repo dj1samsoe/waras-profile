@@ -23,7 +23,7 @@ export default function Testimonial() {
         className="flex flex-col items-center space-y-5 pb-5"
       >
         <div className="flex flex-col space-y-3 items-center pt-5">
-          <p className="md:text-xl text-lg font-semibold text-secondary-purple">
+          <p className="md:text-xl text-lg font-semibold text-primary-purple">
             Testimoni
           </p>
           <h1 className="md:text-3xl text-2xl font-semibold text-center">

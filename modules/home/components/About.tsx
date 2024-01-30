@@ -26,7 +26,7 @@ export default function About() {
 
         <div className="flex flex-col space-y-5">
           <div className="flex flex-col space-y-2 md:items-start items-center">
-            <span className="md:text-xl text-lg font-semibold text-secondary-purple">
+            <span className="md:text-xl text-lg font-semibold text-primary-purple">
               Tentang Kami
             </span>
             <h1 className="md:text-3xl text-2xl font-semibold">

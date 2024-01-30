@@ -25,7 +25,7 @@ export default function Facilities() {
         className="flex flex-col items-center space-y-5 pb-5"
       >
         <div className="flex flex-col space-y-3 items-center pt-5">
-          <p className="md:text-xl text-lg font-semibold text-secondary-purple">
+          <p className="md:text-xl text-lg font-semibold text-primary-purple">
             Kenapa Memilih Kami?
           </p>
           <h1 className="md:text-3xl text-2xl font-semibold text-center">
@@ -45,11 +45,9 @@ export default function Facilities() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: index * 0.1 }}
             viewport={{ once: true }}
+            key={index}
           >
-            <div
-              key={index}
-              className="relative hover:scale-105 transition-all duration-200"
-            >
+            <div className="relative hover:scale-105 transition-all duration-200">
               <Image
                 src={item.image}
                 alt="fasilitas-image"
