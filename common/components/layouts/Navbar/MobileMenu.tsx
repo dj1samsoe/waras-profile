@@ -6,12 +6,13 @@ import Breakline from "../../elements/Breakline";
 export const MobileMenu: FC = () => {
   return (
     <motion.div
-      className="h-fit w-full flex flex-col bg-primary-white pb-5 rounded-md"
-      initial={{ y: -100 }}
+      className="h-full w-full flex flex-col bg-primary-white/70 backdrop-blur-xl py-5 rounded-md"
+      initial={{ y: -50, opacity: 0 }}
       animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -50 }}
       transition={{ duration: 0.3 }}
     >
-      <Breakline />
+      <Breakline className="md:flex hidden" />
       <div>
         <ul className="flex flex-col space-y-5 items-center text-quaternary-black font-medium">
           <li>

@@ -1,17 +1,58 @@
 "use client";
 import Card from "@/common/components/elements/Card";
-import { REVIEW } from "@/common/constant/review";
 import useIsMobile from "@/common/hooks/useIsMobile";
 import Carousel from "nuka-carousel";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Breakline from "@/common/components/elements/Breakline";
 import { motion } from "framer-motion";
 import { GoStarFill } from "react-icons/go";
 import { FaCircle } from "react-icons/fa";
+import { User } from "@/common/types/comments";
+import axios from "axios";
+
+interface ApiResponse {
+  user: User[];
+}
 
 export default function Testimonial() {
   const isMobile = useIsMobile();
+  const [comments, setComments] = useState<User[]>([]);
+
+  useEffect(() => {
+    const fetchComments = async () => {
+      try {
+        const response = await axios.get<ApiResponse>("/api/scrapper");
+        setComments(response.data.user);
+      } catch (error) {
+        console.error("Error fetching comments:", error);
+      }
+    };
+
+    fetchComments();
+  }, []);
+
+  const renderStars = (rating: string) => {
+    const starRating = parseFloat(rating);
+    const fullStars = Math.floor(starRating);
+    const halfStar = starRating % 1 !== 0;
+
+    return (
+      <div style={{ display: "flex", alignItems: "center" }}>
+        {Array.from({ length: 5 }, (_, index) => (
+          <span key={index}>
+            {index < fullStars ? (
+              <GoStarFill style={{ color: "gold" }} />
+            ) : halfStar && index === fullStars ? (
+              <GoStarFill style={{ color: "gold" }} />
+            ) : (
+              <GoStarFill style={{ color: "gold" }} />
+            )}
+          </span>
+        ))}
+      </div>
+    );
+  };
 
   return (
     <section className="max-w-screen-2xl min-h-screen md:px-20 px-5 text-quaternary-black">
@@ -67,29 +108,23 @@ export default function Testimonial() {
         )}
         className="py-10"
       >
-        {REVIEW?.map((items, index) => (
+        {comments?.map((items, index) => (
           <Card
             key={index}
             className="flex flex-col items-start space-y-7 px-5 py-10 bg-white min-h-[20rem]"
           >
             <div className="flex gap-3 items-center">
               <Image
-                src={items.image}
+                src={items.thumbnail}
                 alt="image-reviewers"
                 width={50}
                 height={50}
               />
               <div className="flex flex-col space-y-2">
-                <h1 className="text-md font-semibold">{items.nama}</h1>
+                <h1 className="text-md font-semibold">{items.name}</h1>
                 <div className="flex items-center gap-2">
-                  <div className="flex gap-0 text-yellow-300">
-                    <GoStarFill />
-                    <GoStarFill />
-                    <GoStarFill />
-                    <GoStarFill />
-                    <GoStarFill />
-                  </div>
-                  <p className="text-sm">{items.time}</p>
+                  {renderStars(items.rating)}
+                  <p className="text-sm">{items.date}</p>
                 </div>
               </div>
             </div>
