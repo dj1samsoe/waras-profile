@@ -6,12 +6,7 @@ import { NextRequest, NextResponse } from "next/server";
 export async function GET(req: NextRequest, res: NextResponse) {
   try {
     const MAPS_LINK = process.env.NEXT_PUBLIC_MAPS_LINK as string;
-    const response = await axios.get(MAPS_LINK, {
-      headers: {
-        "User-Agent":
-          "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36",
-      },
-    });
+    const response = await axios.get(MAPS_LINK);
     let $ = cheerio.load(response.data);
 
     let user: User[] = [],
