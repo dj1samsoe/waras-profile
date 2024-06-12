@@ -103,15 +103,13 @@ export default function Service() {
       <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 gap-7 ">
         {MATIC?.map((item, index) => (
           <motion.div
+            key={index}
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: index * 0.1 }}
             viewport={{ once: true }}
           >
-            <Card
-              key={index}
-              className="flex flex-col space-y-5 items-center justify-between bg-white py-10 h-[24rem] hover:-translate-y-3 transition-all duration-200"
-            >
+            <Card className="flex flex-col space-y-5 items-center justify-between bg-white py-10 h-[24rem] hover:-translate-y-3 transition-all duration-200">
               <h1 className="md:text-2xl text-xl font-medium text-center">
                 {item.title}
               </h1>
@@ -149,10 +147,10 @@ export default function Service() {
         <Link
           href="https://wa.me/6289679047230/"
           target="_blank"
-          className="px-5 py-3 rounded-full md:text-lg text-md bg-tertiary-red text-primary-white flex items-center gap-3 hover:bg-tertiary-red/90 hover:shadow-lg transition-all duration-300 max-w-[16rem]"
+          className="px-5 py-3 rounded-full md:text-lg text-md bg-primary-purple text-primary-white flex items-center gap-3 hover:bg-tertiary-red/90 hover:shadow-lg transition-all duration-300 max-w-[16rem]"
         >
           <MdWhatsapp className="w-6 h-6" />
-          Hubungi Sekarang
+          Hubungi Kami
         </Link>
       </motion.div>
     </section>

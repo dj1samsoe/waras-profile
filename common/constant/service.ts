@@ -45,8 +45,8 @@ export const MATIC = [
   {
     title: "Intensif",
     sup: "Rp",
-    price: 1,
-    sub: "juta",
+    price: 900,
+    sub: "ribu",
     description1: "5x Pertemuan (10 jam)",
     description2: "Mobil Matic",
     description3: "",
@@ -55,7 +55,7 @@ export const MATIC = [
   {
     title: "Ekonomis",
     sup: "Rp",
-    price: 500,
+    price: 450,
     sub: "ribu",
     description1: "5 jam tatap muka",
     description2: "Mobil Matic",
@@ -75,7 +75,7 @@ export const MATIC = [
   {
     title: "Ekonomis + SIM",
     sup: "Rp",
-    price: 1.5,
+    price: 1.6,
     sub: "juta",
     description1: "5 jam tatap muka",
     description2: "Mobil Matic",
