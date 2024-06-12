@@ -31,6 +31,7 @@ export default function Footer() {
       <nav className="flex gap-3">
         <Link
           href="https://instagram.com/kursusmengemudiwaras"
+          target="_blank"
           aria-label="Instagram"
           className="p-2 text-white"
         >
@@ -38,6 +39,7 @@ export default function Footer() {
         </Link>
         <Link
           href="https://facebook.com/kursusmengemudiwaras"
+          target="_blank"
           aria-label="facebook"
           className="p-2 text-white"
         >
@@ -45,6 +47,7 @@ export default function Footer() {
         </Link>
         <Link
           href="https://twitter.com/kursusmengemudiwaras"
+          target="_blank"
           aria-label="twitter"
           className="p-2 text-white"
         >
