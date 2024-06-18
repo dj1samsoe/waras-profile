@@ -3,6 +3,8 @@ import cheerio from "cheerio";
 import axios from "axios";
 import { NextRequest, NextResponse } from "next/server";
 
+export const revalidate = 3600;
+
 export async function GET(req: NextRequest, res: NextResponse) {
   try {
     const MAPS_LINK = process.env.NEXT_PUBLIC_MAPS_LINK as string;

@@ -14,6 +14,7 @@ import axios from "axios";
 interface ApiResponse {
   user: User[];
 }
+export const revalidate = 3600;
 
 export default function Testimonial() {
   const isMobile = useIsMobile();
