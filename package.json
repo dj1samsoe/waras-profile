@@ -13,7 +13,7 @@
     "@emotion/styled": "^11.11.0",
     "@types/cheerio": "^0.22.35",
     "@vercel/analytics": "^1.1.2",
-    "axios": "^1.7.2",
+    "axios": "^1.7.4",
     "cheerio": "^1.0.0-rc.12",
     "clsx": "^2.1.0",
     "framer-motion": "^10.18.0",
