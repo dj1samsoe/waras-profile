@@ -6,6 +6,7 @@ import { NextRequest, NextResponse } from "next/server";
 export const revalidate = 3600;
 
 export async function GET(req: NextRequest, res: NextResponse) {
+  "use server";
   try {
     const MAPS_LINK = process.env.NEXT_PUBLIC_MAPS_LINK as string;
     const response = await axios.get(MAPS_LINK);
