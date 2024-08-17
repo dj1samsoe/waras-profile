@@ -55,7 +55,8 @@ export default function Facilities() {
                 height={500}
                 className="w-full object-cover rounded-2xl"
               />
-              <div className="absolute top-0 left-0 z-[50] bottom-0 right-0 w-full h-full bg-gradient-to-t from-primary-purple/90 via-primary-purple/60 to-primary-purple/20 rounded-2xl">
+
+              <div className="absolute top-0 left-0 z-50 bottom-0 right-0 w-full h-full bg-gradient-to-t from-primary-purple/90 via-primary-purple/60 to-primary-purple/20 rounded-2xl">
                 <div className="flex flex-col items-center justify-center h-full w-full">
                   {item.icon}
                   <p className="text-xl font-normal text-primary-white">

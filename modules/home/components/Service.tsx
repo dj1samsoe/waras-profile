@@ -19,7 +19,7 @@ export default function Service() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
-        className="grid md:grid-cols-2 grid-cols-1 gap-10 pt-5"
+        className="grid lg:grid-cols-2 grid-cols-1 gap-10 pt-5"
       >
         <div className="flex flex-col space-y-3">
           <p className="md:text-xl text-lg font-semibold text-primary-purple">
@@ -51,7 +51,7 @@ export default function Service() {
         </h1>
         <Breakline className="w-24 text-center border-2 border-primary-purple" />
       </motion.div>
-      <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 gap-7 ">
+      <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-7 ">
         {MANUAL?.map((item, index) => (
           <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -100,7 +100,7 @@ export default function Service() {
         </h1>
         <Breakline className="w-24 text-center border-2 border-primary-purple" />
       </motion.div>
-      <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 gap-7 ">
+      <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-7 ">
         {MATIC?.map((item, index) => (
           <motion.div
             key={index}

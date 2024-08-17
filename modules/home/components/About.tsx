@@ -14,7 +14,7 @@ export default function About() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
-        className="grid md:grid-cols-2 grid-cols-1 gap-10 pt-5"
+        className="grid lg:grid-cols-2 grid-cols-1 gap-10 pt-5"
       >
         <Image
           src="/about.webp"
