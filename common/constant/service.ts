@@ -22,7 +22,7 @@ export const MANUAL = [
   {
     title: "Intensif + SIM",
     sup: "Rp",
-    price: 1.7,
+    price: 1.8,
     sub: "juta",
     description1: "5x Pertemuan (10 jam)",
     description2: "Mobil Manual",
