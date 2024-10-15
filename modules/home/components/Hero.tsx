@@ -34,7 +34,7 @@ export default function Hero() {
               maupun C dengan pelayanan terbaik
             </p>
             <Link
-              href="https://api.whatsapp.com/send?phone=6289679047230&text=Halo%2C%20Saya%20tertarik%20dengan%20Kursus%20Mengemudi%20Waras.%20Apakah%20bisa%20berkomunikasi%20lebih%20lanjut%3F"
+              href="https://api.whatsapp.com/send?phone=6287754030807&text=Halo%2C%20Saya%20tertarik%20dengan%20Kursus%20Mengemudi%20Waras.%20Apakah%20bisa%20berkomunikasi%20lebih%20lanjut%3F"
               target="_blank"
               className="px-5 py-3 font-openSans rounded-full bg-neutral-800 md:text-lg text-md text-primary-white flex items-center gap-3 hover:bg-neutral-950 transition-all duration-300 max-w-[16rem]"
             >
