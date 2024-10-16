@@ -82,7 +82,7 @@ export default function Service() {
                 aria-label="Klik"
                 className="px-5 py-2 rounded-full bg-primary-purple text-primary-white hover:shadow-lg hover:bg-secondary-purple transition-all duration-200"
               >
-                Daftar Disini
+                Daftar
               </Link>
             </Card>
           </motion.div>
@@ -131,7 +131,7 @@ export default function Service() {
                 aria-label="Klik"
                 className="px-5 py-2 rounded-full bg-primary-purple text-primary-white hover:shadow-lg hover:bg-secondary-purple transition-all duration-200"
               >
-                Daftar Disini
+                Daftar
               </Link>
             </Card>
           </motion.div>
