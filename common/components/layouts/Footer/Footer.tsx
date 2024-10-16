@@ -1,11 +1,13 @@
 import Link from "next/link";
 import React from "react";
-import { FaFacebook, FaInstagram } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
+// import { FaFacebook, FaInstagram } from "react-icons/fa";
+// import { FaXTwitter } from "react-icons/fa6";
+import Image from "next/image";
 
 export default function Footer() {
   return (
     <footer className="footer footer-center p-10 bg-quaternary-black text-primary-white rounded">
+      <Image src="/logo-4.png" alt="navbar-logo" width={200} height={100} />
       <nav className="grid grid-flow-col gap-4">
         <Link href="#tentang" className="link link-hover" aria-label="Tentang">
           Tentang
@@ -28,7 +30,7 @@ export default function Footer() {
           Kontak
         </Link>
       </nav>
-      <nav className="flex gap-3">
+      {/* <nav className="flex gap-3">
         <Link
           href="https://instagram.com/kursusmengemudiwaras"
           target="_blank"
@@ -53,10 +55,10 @@ export default function Footer() {
         >
           <FaXTwitter className="w-6 h-6" />
         </Link>
-      </nav>
-      <aside>
+      </nav> */}
+      <div>
         <p>Copyright © 2024 - All right reserved by Kursus Mengemudi Waras</p>
-      </aside>
+      </div>
     </footer>
   );
 }
