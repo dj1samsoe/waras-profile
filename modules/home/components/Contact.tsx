@@ -1,7 +1,10 @@
 "use client";
 import Breakline from "@/common/components/elements/Breakline";
 import { motion } from "framer-motion";
+import Link from "next/link";
 import React from "react";
+import { FaInstagram } from "react-icons/fa";
+import { MdWhatsapp } from "react-icons/md";
 
 export default function Contact() {
   return (
@@ -18,7 +21,7 @@ export default function Contact() {
       >
         <div className="flex flex-col space-y-3">
           <p className="md:text-xl text-lg font-semibold text-primary-purple">
-            Informasi Kontak & Lokasi
+            Informasi Lokasi & Kontak
           </p>
           <h1 className="md:text-3xl text-2xl font-semibold">
             Kursus Mengemudi Waras
@@ -40,6 +43,47 @@ export default function Contact() {
         referrerPolicy="no-referrer-when-downgrade"
         title="embed maps"
       />
+      <motion.h1
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+        className="md:text-2xl text-xl font-semibold capitalize text-center mb-10"
+      >
+        Ingin bisa mengemudi tapi tidak ada pengajar? Hubungi kami sekarang
+        juga!
+      </motion.h1>
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+        className="w-full flex md:flex-row flex-col md:gap-8 gap-4 items-center justify-center"
+      >
+        <Link href="https://wa.me/6287754030807" target="_blank">
+          <div className="flex flex-col space-y-4 items-center border border-quaternary-black rounded-lg p-5 w-[320px] h-[200px] hover:bg-neutral-200 transition-all duration-200">
+            <MdWhatsapp className="w-16 h-16 text-primary-purple" />
+            <h2 className="text-quaternary-black font-semibold md:text-xl">
+              +62 877 5403 0807
+            </h2>
+            <p className="text-quaternary-black font-openSans md:text-lg">
+              WhatsApp Admin
+            </p>
+          </div>
+        </Link>
+        <span className="text-neutral-700">Atau</span>
+        <Link href="https://instagram.com/kursusmengemudiwaras" target="_blank">
+          <div className="flex flex-col space-y-4 items-center border border-quaternary-black rounded-lg p-5 w-[320px] h-[200px] hover:bg-neutral-200 transition-all duration-200">
+            <FaInstagram className="w-16 h-16 text-primary-purple" />
+            <h2 className="text-quaternary-black font-semibold md:text-xl">
+              @kursusmengemudiwaras
+            </h2>
+            <p className="text-quaternary-black font-openSans md:text-lg">
+              DM Instagram
+            </p>
+          </div>
+        </Link>
+      </motion.div>
     </section>
   );
 }
