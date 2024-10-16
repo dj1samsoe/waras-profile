@@ -48,7 +48,7 @@ export default function Contact() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
-        className="md:text-2xl text-xl font-semibold capitalize text-center mb-10"
+        className="md:text-2xl text-xl font-semibold text-center mb-10"
       >
         Ingin bisa mengemudi tapi tidak ada pengajar? Hubungi kami sekarang
         juga!
@@ -64,14 +64,14 @@ export default function Contact() {
           <div className="flex flex-col space-y-4 items-center border border-quaternary-black rounded-lg p-5 w-[320px] h-[200px] hover:bg-neutral-200 transition-all duration-200">
             <MdWhatsapp className="w-16 h-16 text-primary-purple" />
             <h2 className="text-quaternary-black font-semibold md:text-xl">
-              +62 877 5403 0807
+              0877-5403-0807
             </h2>
             <p className="text-quaternary-black font-openSans md:text-lg">
               WhatsApp Admin
             </p>
           </div>
         </Link>
-        <span className="text-neutral-700">Atau</span>
+        <span className="text-neutral-700">atau</span>
         <Link href="https://instagram.com/kursusmengemudiwaras" target="_blank">
           <div className="flex flex-col space-y-4 items-center border border-quaternary-black rounded-lg p-5 w-[320px] h-[200px] hover:bg-neutral-200 transition-all duration-200">
             <FaInstagram className="w-16 h-16 text-primary-purple" />
@@ -79,7 +79,7 @@ export default function Contact() {
               @kursusmengemudiwaras
             </h2>
             <p className="text-quaternary-black font-openSans md:text-lg">
-              DM Instagram
+              Instagram
             </p>
           </div>
         </Link>
