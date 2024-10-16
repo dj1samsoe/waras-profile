@@ -7,7 +7,7 @@ export const MANUAL = [
     description1: "5x Pertemuan (10 jam)",
     description2: "Mobil Manual",
     description3: "",
-    href: "https://api.whatsapp.com/send?phone=6289679047230&text=Halo%2C%20Saya%20ingin%20mendaftar%20paket%20Manual%20Intensif%20di%20Kursus%20Mengemudi%20Waras%20dengan%20biaya%20Rp.%20700.000.%20Bagaimana%20cara%20pembayarannya%3F.",
+    href: "https://api.whatsapp.com/send?phone=6287754030807&text=Halo%2C%20Saya%20ingin%20mendaftar%20paket%20Manual%20Intensif%20di%20Kursus%20Mengemudi%20Waras%20dengan%20biaya%20Rp.%20700.000.%20Bagaimana%20cara%20pembayarannya%3F.",
   },
   {
     title: "Ekonomis",
@@ -17,7 +17,7 @@ export const MANUAL = [
     description1: "5 jam tatap muka",
     description2: "Mobil Manual",
     description3: "",
-    href: "https://api.whatsapp.com/send?phone=6289679047230&text=Halo%2C%20Saya%20ingin%20mendaftar%20paket%20Manual%20Ekonomis%20di%20Kursus%20Mengemudi%20Waras%20dengan%20biaya%20Rp.%20400.000.%20Bagaimana%20cara%20pembayarannya%3F.",
+    href: "https://api.whatsapp.com/send?phone=6287754030807&text=Halo%2C%20Saya%20ingin%20mendaftar%20paket%20Manual%20Ekonomis%20di%20Kursus%20Mengemudi%20Waras%20dengan%20biaya%20Rp.%20400.000.%20Bagaimana%20cara%20pembayarannya%3F.",
   },
   {
     title: "Intensif + SIM",
@@ -27,7 +27,7 @@ export const MANUAL = [
     description1: "5x Pertemuan (10 jam)",
     description2: "Mobil Manual",
     description3: "Pengurusan SIM A",
-    href: "https://api.whatsapp.com/send?phone=6289679047230&text=Halo%2C%20Saya%20ingin%20mendaftar%20paket%20Manual%20Intensif%20%2B%20SIM%20di%20Kursus%20Mengemudi%20Waras%20dengan%20biaya%20Rp.%201.700.000.%20Bagaimana%20cara%20pembayarannya%3F",
+    href: "https://api.whatsapp.com/send?phone=6287754030807&text=Halo%2C%20Saya%20ingin%20mendaftar%20paket%20Manual%20Intensif%20%2B%20SIM%20di%20Kursus%20Mengemudi%20Waras%20dengan%20biaya%20Rp.%201.700.000.%20Bagaimana%20cara%20pembayarannya%3F",
   },
   {
     title: "Ekonomis + SIM",
@@ -37,7 +37,7 @@ export const MANUAL = [
     description1: "5 jam tatap muka",
     description2: "Mobil Manual",
     description3: "Pengurusan SIM A",
-    href: "https://api.whatsapp.com/send?phone=6289679047230&text=Halo%2C%20Saya%20ingin%20mendaftar%20paket%20Manual%20Ekonomis%20%2B%20SIM%20di%20Kursus%20Mengemudi%20Waras%20dengan%20biaya%20Rp.%201.400.000.%20Bagaimana%20cara%20pembayarannya%3F",
+    href: "https://api.whatsapp.com/send?phone=6287754030807&text=Halo%2C%20Saya%20ingin%20mendaftar%20paket%20Manual%20Ekonomis%20%2B%20SIM%20di%20Kursus%20Mengemudi%20Waras%20dengan%20biaya%20Rp.%201.400.000.%20Bagaimana%20cara%20pembayarannya%3F",
   },
 ];
 
@@ -50,7 +50,7 @@ export const MATIC = [
     description1: "5x Pertemuan (10 jam)",
     description2: "Mobil Matic",
     description3: "",
-    href: "https://api.whatsapp.com/send?phone=6289679047230&text=Halo%2C%20Saya%20ingin%20mendaftar%20paket%20Matic%20Intensif%20di%20Kursus%20Mengemudi%20Waras%20dengan%20biaya%20Rp.%201.000.000.%20Bagaimana%20cara%20pembayarannya%3F",
+    href: "https://api.whatsapp.com/send?phone=6287754030807&text=Halo%2C%20Saya%20ingin%20mendaftar%20paket%20Matic%20Intensif%20di%20Kursus%20Mengemudi%20Waras%20dengan%20biaya%20Rp.%201.000.000.%20Bagaimana%20cara%20pembayarannya%3F",
   },
   {
     title: "Ekonomis",
@@ -60,7 +60,7 @@ export const MATIC = [
     description1: "5 jam tatap muka",
     description2: "Mobil Matic",
     description3: "",
-    href: "https://api.whatsapp.com/send?phone=6289679047230&text=Halo%2C%20Saya%20ingin%20mendaftar%20paket%20Matic%20Ekonomis%20di%20Kursus%20Mengemudi%20Waras%20dengan%20biaya%20Rp.%20500.000.%20Bagaimana%20cara%20pembayarannya%3F",
+    href: "https://api.whatsapp.com/send?phone=6287754030807&text=Halo%2C%20Saya%20ingin%20mendaftar%20paket%20Matic%20Ekonomis%20di%20Kursus%20Mengemudi%20Waras%20dengan%20biaya%20Rp.%20500.000.%20Bagaimana%20cara%20pembayarannya%3F",
   },
   {
     title: "Intensif + SIM",
@@ -70,7 +70,7 @@ export const MATIC = [
     description1: "5x Pertemuan (10 jam)",
     description2: "Mobil Matic",
     description3: "Pengurusan SIM A",
-    href: "https://api.whatsapp.com/send?phone=6289679047230&text=Halo%2C%20Saya%20ingin%20mendaftar%20paket%20Matic%20Intensif%20%2B%20SIM%20di%20Kursus%20Mengemudi%20Waras%20dengan%20biaya%20Rp.%202.000.000.%20Bagaimana%20cara%20pembayarannya%3F",
+    href: "https://api.whatsapp.com/send?phone=6287754030807&text=Halo%2C%20Saya%20ingin%20mendaftar%20paket%20Matic%20Intensif%20%2B%20SIM%20di%20Kursus%20Mengemudi%20Waras%20dengan%20biaya%20Rp.%202.000.000.%20Bagaimana%20cara%20pembayarannya%3F",
   },
   {
     title: "Ekonomis + SIM",
@@ -80,6 +80,6 @@ export const MATIC = [
     description1: "5 jam tatap muka",
     description2: "Mobil Matic",
     description3: "Pengurusan SIM A",
-    href: "https://api.whatsapp.com/send?phone=6289679047230&text=Halo%2C%20Saya%20ingin%20mendaftar%20paket%20Matic%20Ekonomis%20%2B%20SIM%20di%20Kursus%20Mengemudi%20Waras%20dengan%20biaya%20Rp.%201.500.000.%20Bagaimana%20cara%20pembayarannya%3F",
+    href: "https://api.whatsapp.com/send?phone=6287754030807&text=Halo%2C%20Saya%20ingin%20mendaftar%20paket%20Matic%20Ekonomis%20%2B%20SIM%20di%20Kursus%20Mengemudi%20Waras%20dengan%20biaya%20Rp.%201.500.000.%20Bagaimana%20cara%20pembayarannya%3F",
   },
 ];

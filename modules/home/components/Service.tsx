@@ -145,7 +145,7 @@ export default function Service() {
         className="flex justify-center py-10"
       >
         <Link
-          href="https://wa.me/6289679047230/"
+          href="https://wa.me/6287754030807/"
           target="_blank"
           className="px-5 py-3 rounded-full md:text-lg text-md bg-primary-purple hover:bg-secondary-purple text-primary-white flex items-center gap-3 hover:bg-tertiary-red/90 hover:shadow-lg transition-all duration-300 max-w-[16rem]"
         >
