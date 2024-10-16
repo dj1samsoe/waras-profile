@@ -73,9 +73,14 @@ export default function Testimonial() {
           </h1>
         </div>
         <Breakline className="w-24 border-2 border-primary-purple" />
-        <p className="text-lg font-openSans text-center">
-          Beberapa pendapat dari mereka yang telah mengikuti kursus kami
-        </p>
+        <div className="flex flex-col items-center space-y-2">
+          <p className="text-lg font-openSans text-center">
+            Beberapa pendapat dari mereka yang telah mengikuti kursus kami
+          </p>
+          <span className="italic text-sm font-thin text-neutral-800">
+            (Sumber: Google Maps Reviews)
+          </span>
+        </div>
       </motion.div>
       <Carousel
         autoplay
@@ -112,8 +117,17 @@ export default function Testimonial() {
         {comments?.map((items, index) => (
           <Card
             key={index}
-            className="flex flex-col items-start space-y-7 px-5 py-10 bg-white min-h-[20rem]"
+            className="flex flex-col items-start justify-between p-8 bg-white h-[20rem]"
           >
+            <p
+              className={
+                items.review !== ""
+                  ? "mx-auto md:text-xl text-lg text-center font-medium font-openSans line-clamp-6 hover:line-clamp-none"
+                  : "text-md text-center mx-auto"
+              }
+            >
+              {items.review !== "" ? `"${items.review}"` : "Tidak ada komentar"}
+            </p>
             <div className="flex gap-3 items-center">
               <Image
                 src={items.thumbnail}
@@ -129,9 +143,6 @@ export default function Testimonial() {
                 </div>
               </div>
             </div>
-            <p className="text-md font-openSans line-clamp-6 hover:line-clamp-none">
-              {items.review}
-            </p>
           </Card>
         ))}
       </Carousel>
