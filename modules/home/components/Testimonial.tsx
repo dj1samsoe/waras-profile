@@ -56,7 +56,7 @@ export default function Testimonial() {
   };
 
   return (
-    <section className="max-w-screen-2xl min-h-screen md:px-20 px-5 text-quaternary-black">
+    <section className="max-w-screen-2xl md:px-20 px-5 text-quaternary-black">
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
