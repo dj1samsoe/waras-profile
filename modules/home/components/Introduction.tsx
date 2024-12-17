@@ -21,7 +21,7 @@ export default function Introduction() {
             <h1 className="md:text-3xl text-2xl font-semibold">
               Kursus Mengemudi Waras
             </h1>
-            <Image src="/arrow-3.svg" alt="logo" width={100} height={100} />
+            <Image src="/arrow.svg" alt="logo" width={100} height={100} />
           </div>
         </div>
         <p className="text-lg font-openSans flex flex-col">

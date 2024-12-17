@@ -1,57 +1,123 @@
 "use client";
 
-import clsx from "clsx";
-import { AnimatePresence } from "framer-motion";
-import React, { useEffect, useState } from "react";
-
-import { useMenu } from "@/common/context/menu";
-
-import useIsMobile from "@/common/hooks/useIsMobile";
-
-import MobileMenuButton from "./MobileMenuButton";
-import MenuHeader from "./MenuHeader";
-import { MobileMenu } from "./MobileMenu";
-import MenuItems from "./MenuItems";
+import React from "react";
+import Link from "next/link";
+import Image from "next/image";
 
 export default function Menu() {
-  const isMobile = useIsMobile();
-  const imageSize = isMobile ? 175 : 200;
-  const { isOpen, toggleMenu } = useMenu();
-
-  useEffect(() => {
-    if (isOpen) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "auto";
-    }
-
-    return () => {
-      document.body.style.overflow = "auto";
-    };
-  }, [isOpen]);
-
   return (
-    <div className={clsx("md:p-0 p-5 w-full md:border-none", isOpen && "pb-0")}>
-      <div className="flex items-center justify-between">
-        <MenuHeader expandMenu={isOpen} imageSize={imageSize} />
-        <div className="hidden md:flex">
-          <MenuItems />
-        </div>
-        {isMobile && (
-          <div
-            className={clsx(
-              "flex md:hidden items-center gap-5",
-              isOpen && "!items-end flex-col-reverse justify-between"
-            )}
-          >
-            <MobileMenuButton expandMenu={isOpen} setExpandMenu={toggleMenu} />
+    <div className="drawer drawer-end md:px-12 bg-white text-black font-medium fixed z-50">
+      <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
+      <div className="drawer-content flex flex-col">
+        <div className="navbar bg-white w-full">
+          <div className="mx-2 flex-1 px-2">
+            <Image
+              src={"/logo.png"}
+              alt="navbar-logo"
+              width={175}
+              height={175}
+            />
           </div>
-        )}
-      </div>
+          <div className="hidden flex-none lg:block">
+            <ul className="menu menu-horizontal">
+              <li>
+                <Link href={"#tentang"} aria-label="Tentang">
+                  Tentang
+                </Link>
+              </li>
+              <li>
+                <Link href={"#fasilitas"} aria-label="Fasilitas">
+                  Fasilitas
+                </Link>
+              </li>
+              <li>
+                <Link href={"#pelayanan"} aria-label="Pelayanan">
+                  Pelayanan
+                </Link>
+              </li>
 
-      {isMobile && (
-        <AnimatePresence>{isOpen && <MobileMenu />}</AnimatePresence>
-      )}
+              <li>
+                <Link href={"#kontak"} aria-label="Kontak">
+                  Kontak
+                </Link>
+              </li>
+            </ul>
+          </div>
+          <div className="flex-none lg:hidden">
+            <label
+              htmlFor="my-drawer-3"
+              aria-label="open sidebar"
+              className="btn btn-square btn-ghost"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                className="inline-block h-6 w-6 stroke-current"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div className="drawer-side z-50">
+        <label
+          htmlFor="my-drawer-3"
+          aria-label="close sidebar"
+          className="drawer-overlay"
+        ></label>
+        <ul className="menu bg-white min-h-full w-80 p-4 items-center">
+          <Image
+            src={"/logo.png"}
+            alt="navbar-logo"
+            width={175}
+            height={175}
+            className="pb-10"
+          />
+          <li className="w-full py-3">
+            <Link
+              href={"#tentang"}
+              aria-label="Tentang"
+              className="w-full flex justify-center text-center"
+            >
+              Tentang
+            </Link>
+          </li>
+          <li className="w-full py-3">
+            <Link
+              href={"#fasilitas"}
+              aria-label="Fasilitas"
+              className="w-full flex justify-center text-center"
+            >
+              Fasilitas
+            </Link>
+          </li>
+          <li className="w-full py-3">
+            <Link
+              href={"#pelayanan"}
+              aria-label="Pelayanan"
+              className="w-full flex justify-center text-center"
+            >
+              Pelayanan
+            </Link>
+          </li>
+          <li className="w-full py-3">
+            <Link
+              href={"#kontak"}
+              aria-label="Kontak"
+              className="w-full flex justify-center text-center"
+            >
+              Kontak
+            </Link>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 }

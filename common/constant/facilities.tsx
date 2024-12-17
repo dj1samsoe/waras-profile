@@ -6,33 +6,27 @@ import { IoCarOutline } from "react-icons/io5";
 
 export const FACILITIES = [
   {
-    image: "/about.webp",
-    icon: <FaRegHandshake className="w-20 h-20 text-white/50" />,
+    icon: "/trusted.png",
     title: "Terpercaya",
   },
   {
-    image: "/about.webp",
-    icon: <IoMdPricetags className="w-16 h-16 text-white/50" />,
+    icon: "/harga.png",
     title: "Harga Kompetitif",
   },
   {
-    image: "/about.webp",
-    icon: <CiFaceSmile className="w-16 h-16 text-white/50" />,
+    icon: "/service.png",
     title: "Pelayanan Terbaik",
   },
   {
-    image: "/about.webp",
-    icon: <GrSchedule className="w-14 h-14 text-white/50" />,
+    icon: "/schedule.png",
     title: "Jadwal Fleksibel",
   },
   {
-    image: "/about.webp",
-    icon: <IoCarOutline className="w-20 h-20 text-white/50" />,
+    icon: "/antar.png",
     title: "Antar Jemput",
   },
   {
-    image: "/about.webp",
-    icon: <FaRegAddressCard className="w-14 h-14 text-white/50" />,
+    icon: "/sim.png",
     title: "Pengurusan SIM",
   },
 ];

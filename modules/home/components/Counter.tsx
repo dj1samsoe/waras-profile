@@ -26,7 +26,7 @@ export default function Counter() {
             <h1 className="md:text-3xl text-2xl font-semibold">
               Kursus Mengemudi Waras
             </h1>
-            <Image src="/arrow-3.svg" alt="logo" width={100} height={100} />
+            <Image src="/arrow.svg" alt="logo" width={100} height={100} />
           </div>
         </div>
         <div className="grid lg:grid-cols-4 grid-cols-2 lg:gap-5 gap-8 md:pt-0 pt-3">

@@ -16,10 +16,10 @@ const config: Config = {
       },
       colors: {
         "primary-white": "#F5F5F5",
-        "primary-purple": "#8C568B",
-        "secondary-purple": "#B56FB4",
-        "tertiary-purple": "#D884D8",
-        "quaternary-black": "#402B3A",
+        "primary-purple": "#133E87",
+        "secondary-purple": "#0A5EB0",
+        "tertiary-purple": "#608BC1",
+        "quaternary-black": "#213555",
       },
       fontFamily: {
         montserrat: ["Montserrat", "sans-serif"],

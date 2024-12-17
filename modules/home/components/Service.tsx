@@ -30,7 +30,7 @@ export default function Service() {
             <h1 className="md:text-3xl text-2xl font-semibold">
               Kursus Mengemudi Waras
             </h1>
-            <Image src="/arrow-3.svg" alt="logo" width={100} height={100} />
+            <Image src="/arrow.svg" alt="logo" width={100} height={100} />
           </div>
         </div>
         <p className="text-lg font-openSans">
@@ -39,54 +39,6 @@ export default function Service() {
           dari dasar seperti pengenalan bagian-bagian mobil, pedal gas, kopling,
           rem, tanjakan atau turunan, dan juga parkir.
         </p>
-      </motion.div>
-      <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        viewport={{ once: true }}
-        className="w-full flex flex-col space-y-4 items-center px-5 py-7 mt-10 rounded-xl bg-primary-purple text-white shadow-md"
-      >
-        <h2 className="md:text-3xl text-2xl font-semibold">
-          Penawaran Spesial!
-        </h2>
-        <p className="text-lg text-center">
-          Kursus Mengemudi{" "}
-          <span className="font-semibold uppercase underline">
-            SPESIAL UNIT INNOVA REBORN MATIC
-          </span>
-        </p>
-        <img
-          src="/reborn.png"
-          alt="car-image"
-          // width={100}
-          // height={100}
-          className="w-[300px] h-[200px] object-contain"
-          loading="lazy"
-        />
-        <p>Dengan Fasilitas :</p>
-        <ul className="list-none text-lg text-center">
-          <li>10 Jam Kursus (5x Pertemuan @2jam)</li>
-          <li>
-            Free antar jemput khusus wilayah Sidoarjo, Gresik, Mojokerto, dan
-            Pasuruan
-          </li>
-        </ul>
-        <div className="flex flex-col space-y-2 items-center ">
-          <p>Hanya dengan harga :</p>
-          <p className="flex gap-1 items-end">
-            <sup className="text-xl">Rp.</sup>
-            <span className="text-5xl font-semibold">2</span>
-            <sub className="text-xl">jt</sub>
-          </p>
-        </div>
-        <Link
-          href="https://api.whatsapp.com/send?phone=6287754030807&text=Halo%2C%20saya%20ingin%20memesan%20penawaran%20spesial%20Kursus%20Mengemudi%20Matic%20dengan%20UNIT%20INNOVA%20REBORN.%20Apakah%20bisa%20berkomunikasi%20lebih%20lanjut%3F"
-          className="px-6 py-3 text-lg rounded-full bg-white text-primary-purple hover:shadow-lg hover:bg-neutral-100 transition-all duration-200"
-          target="_blank"
-        >
-          Pesan Sekarang
-        </Link>
       </motion.div>
       <motion.div
         initial={{ opacity: 0, y: 50 }}
@@ -186,6 +138,54 @@ export default function Service() {
           </motion.div>
         ))}
       </div>
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+        className="w-full flex flex-col space-y-4 items-center px-5 py-7 mt-10 rounded-xl bg-primary-purple text-white shadow-md"
+      >
+        <h2 className="md:text-3xl text-2xl font-semibold">
+          Penawaran Spesial!
+        </h2>
+        <p className="text-lg text-center">
+          Kursus Mengemudi{" "}
+          <span className="font-semibold uppercase underline">
+            SPESIAL UNIT INNOVA REBORN MATIC
+          </span>
+        </p>
+        <img
+          src="/reborn.png"
+          alt="car-image"
+          // width={100}
+          // height={100}
+          className="w-[300px] h-[200px] object-contain"
+          loading="lazy"
+        />
+        <p>Dengan Fasilitas :</p>
+        <ul className="list-none text-lg text-center">
+          <li>10 Jam Kursus (5x Pertemuan @2jam)</li>
+          <li>
+            Free antar jemput khusus wilayah Sidoarjo, Gresik, Mojokerto, dan
+            Pasuruan
+          </li>
+        </ul>
+        <div className="flex flex-col space-y-2 items-center ">
+          <p>Hanya dengan harga :</p>
+          <p className="flex gap-1 items-end">
+            <sup className="text-xl">Rp.</sup>
+            <span className="text-5xl font-semibold">2</span>
+            <sub className="text-xl">jt</sub>
+          </p>
+        </div>
+        <Link
+          href="https://api.whatsapp.com/send?phone=6287754030807&text=Halo%2C%20saya%20ingin%20memesan%20penawaran%20spesial%20Kursus%20Mengemudi%20Matic%20dengan%20UNIT%20INNOVA%20REBORN.%20Apakah%20bisa%20berkomunikasi%20lebih%20lanjut%3F"
+          className="px-6 py-3 text-lg rounded-full bg-white text-primary-purple hover:shadow-lg hover:bg-neutral-100 transition-all duration-200"
+          target="_blank"
+        >
+          Pesan Sekarang
+        </Link>
+      </motion.div>
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}

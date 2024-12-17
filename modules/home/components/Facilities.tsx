@@ -1,11 +1,6 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 import Breakline from "@/common/components/elements/Breakline";
-import { CiFaceSmile } from "react-icons/ci";
-import { FaRegHandshake } from "react-icons/fa";
-import { GrSchedule, GrHostMaintenance } from "react-icons/gr";
-import { IoMdPricetags } from "react-icons/io";
-import { IoCarOutline } from "react-icons/io5";
-import Image from "next/image";
 import { FACILITIES } from "@/common/constant/facilities";
 
 import React from "react";
@@ -38,7 +33,7 @@ export default function Facilities() {
           pengajaran yang baik
         </p>
       </motion.div>
-      <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-7">
+      <div className="w-full grid lg:grid-cols-3 lg:grid-rows-2 md:grid-cols-2 md:grid-rows-3 grid-cols-1 gap-7">
         {FACILITIES?.map((item, index) => (
           <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -47,23 +42,14 @@ export default function Facilities() {
             viewport={{ once: true }}
             key={index}
           >
-            <div className="relative hover:scale-105 transition-all duration-200">
-              <Image
-                src={item.image}
+            <div className="flex flex-col space-y-3 items-center justify-center h-full w-full">
+              <img
+                src={item.icon}
                 alt="fasilitas-image"
-                width={500}
-                height={500}
-                className="w-full object-cover rounded-2xl"
+                className="w-24 h-24"
+                loading="lazy"
               />
-
-              <div className="absolute top-0 left-0 z-50 bottom-0 right-0 w-full h-full bg-gradient-to-t from-primary-purple/90 via-primary-purple/60 to-primary-purple/20 rounded-2xl">
-                <div className="flex flex-col items-center justify-center h-full w-full">
-                  {item.icon}
-                  <p className="text-xl font-normal text-primary-white">
-                    {item.title}
-                  </p>
-                </div>
-              </div>
+              <p className="text-xl font-medium text-black">{item.title}</p>
             </div>
           </motion.div>
         ))}
