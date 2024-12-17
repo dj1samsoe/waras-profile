@@ -7,11 +7,11 @@ import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
-    <div className="flex md:flex-row flex-col md:gap-10 md:px-20 px-5 w-full h-screen">
+    <div className="flex md:flex-row flex-col md:gap-10 md:px-20 px-5 items-center w-full h-screen">
       <img
         src="/hero.png"
         alt="hero-image"
-        className="w-[500px] object-contain md:hidden block mt-16 mb-0"
+        className="w-full object-contain md:hidden block mt-16 mb-0 mx-auto"
         loading="lazy"
       />
       <div className="space-y-5 flex flex-col justify-center max-w-[600px]">

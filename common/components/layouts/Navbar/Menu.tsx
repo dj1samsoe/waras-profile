@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function Menu() {
   return (
-    <div className="drawer drawer-end md:px-12 bg-white text-black font-medium fixed z-50">
+    <div className="drawer md:px-12 bg-white text-black font-medium fixed z-50">
       <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content flex flex-col">
         <div className="navbar bg-white w-full">

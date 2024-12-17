@@ -102,7 +102,7 @@ export default function Testimonial() {
                   <button
                     onClick={() => goToSlide(index)}
                     style={{
-                      color: index === currentSlide ? "purple" : "gray",
+                      color: index === currentSlide ? "blue" : "gray",
                     }}
                   >
                     <FaCircle size={10} />
