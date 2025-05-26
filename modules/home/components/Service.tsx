@@ -8,12 +8,13 @@ import { MdWhatsapp } from "react-icons/md";
 import { motion } from "framer-motion";
 import { MANUAL, MATIC } from "@/common/constant/service";
 import Breakline from "@/common/components/elements/Breakline";
+import { FaInfoCircle } from "react-icons/fa";
 
 export default function Service() {
   return (
     <section
       className="max-w-screen-2xl md:px-20 px-5 py-20 text-quaternary-black"
-      id="pelayanan"
+      id="paket-kursus"
     >
       <motion.div
         initial={{ opacity: 0, y: 50 }}
@@ -45,6 +46,21 @@ export default function Service() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
+        className="bg-primary-purple rounded-xl mt-10 p-5 flex md:items-center items-start md:justify-center justify-start gap-3"
+      >
+        <FaInfoCircle size={24} className="text-white text-2xl" />
+        <p className="md:text-center text-start md:text-lg text-base font-normal text-[#F5F5F5]">
+          Nikmati fleksibilitas lebih! Kursus mengemudi{" "}
+          <span className="md:text-lg text-base font-semibold text-white">
+            bisa menggunakan mobil pribadi Anda — tanpa tambahan biaya.
+          </span>
+        </p>
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
         className="flex flex-col items-center py-10"
       >
         <h1 className="md:text-2xl text-xl font-medium text-center">
@@ -52,7 +68,7 @@ export default function Service() {
         </h1>
         <Breakline className="w-24 text-center border-2 border-primary-purple" />
       </motion.div>
-      <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-7 ">
+      <div className="grid lg:grid-cols-4 grid-cols-2 gap-7 ">
         {MANUAL?.map((item, index) => (
           <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -61,18 +77,18 @@ export default function Service() {
             viewport={{ once: true }}
             key={index}
           >
-            <Card className="flex flex-col space-y-5 items-center justify-between bg-white py-10 h-[24rem] hover:-translate-y-3 transition-all duration-200">
-              <h1 className="md:text-2xl text-xl font-medium text-center">
+            <Card className="flex flex-col space-y-5 items-center justify-between bg-white py-10 px-5 h-[24rem] hover:-translate-y-3 transition-all duration-200">
+              <h1 className="md:text-2xl text-lg font-medium text-center">
                 {item.title}
               </h1>
               <p className="flex gap-1 items-end">
-                <sup className="text-xl">{item.sup}</sup>
-                <span className="text-5xl font-semibold text-primary-purple">
+                <sup className="md:text-xl text-base">{item.sup}</sup>
+                <span className="md:text-5xl text-3xl font-semibold text-primary-purple">
                   {item.price}
                 </span>
-                <sub className="text-xl">{item.sub}</sub>
+                <sub className="md:text-xl text-base">{item.sub}</sub>
               </p>
-              <div className="flex flex-col space-y-2 items-center text-md">
+              <div className="flex flex-col space-y-2 items-center md:text-base text-sm text-center">
                 <p>{item.description1}</p>
                 <p>{item.description2}</p>
                 <p>{item.description3}</p>
@@ -101,7 +117,7 @@ export default function Service() {
         </h1>
         <Breakline className="w-24 text-center border-2 border-primary-purple" />
       </motion.div>
-      <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-7 ">
+      <div className="grid lg:grid-cols-4 grid-cols-2 gap-7 ">
         {MATIC?.map((item, index) => (
           <motion.div
             key={index}
@@ -110,18 +126,18 @@ export default function Service() {
             transition={{ duration: 0.8, delay: index * 0.1 }}
             viewport={{ once: true }}
           >
-            <Card className="flex flex-col space-y-5 items-center justify-between bg-white py-10 h-[24rem] hover:-translate-y-3 transition-all duration-200">
-              <h1 className="md:text-2xl text-xl font-medium text-center">
+            <Card className="flex flex-col space-y-5 items-center justify-between bg-white py-10 px-5 h-[24rem] hover:-translate-y-3 transition-all duration-200">
+              <h1 className="md:text-2xl text-lg font-medium text-center">
                 {item.title}
               </h1>
               <p className="flex gap-1 items-end">
-                <sup className="text-xl">{item.sup}</sup>
-                <span className="text-5xl font-semibold text-primary-purple">
+                <sup className="md:text-xl text-base">{item.sup}</sup>
+                <span className="md:text-5xl text-3xl font-semibold text-primary-purple">
                   {item.price}
                 </span>
-                <sub className="text-xl">{item.sub}</sub>
+                <sub className="md:text-xl text-base">{item.sub}</sub>
               </p>
-              <div className="flex flex-col space-y-2 items-center text-md">
+              <div className="flex flex-col space-y-2 items-center md:text-base text-sm text-center">
                 <p>{item.description1}</p>
                 <p>{item.description2}</p>
                 <p>{item.description3}</p>

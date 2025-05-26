@@ -20,11 +20,18 @@ export default function Footer() {
           Fasilitas
         </Link>
         <Link
-          href="#pelayanan"
+          href="#paket-kursus"
           className="link link-hover"
-          aria-label="Pelayanan"
+          aria-label="paket-kursus"
         >
-          Pelayanan
+          Paket Kursus
+        </Link>
+        <Link
+          href="#testimoni"
+          className="link link-hover"
+          aria-label="testimoni"
+        >
+          Testimoni
         </Link>
         <Link href="#kontak" className="link link-hover" aria-label="Kontak">
           Kontak

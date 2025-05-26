@@ -3,8 +3,8 @@ import Breakline from "@/common/components/elements/Breakline";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import React from "react";
-import { FaInstagram } from "react-icons/fa";
 import { MdWhatsapp } from "react-icons/md";
+import Image from "next/image";
 
 export default function Contact() {
   return (
@@ -58,29 +58,27 @@ export default function Contact() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
-        className="w-full flex md:flex-row flex-col md:gap-8 gap-4 items-center justify-center"
+        className="w-full flex flex-row md:gap-8 gap-4 items-stretch justify-center"
       >
         <Link href="https://wa.me/6287754030807" target="_blank">
-          <div className="flex flex-col space-y-4 items-center border border-quaternary-black rounded-lg p-5 w-[320px] h-[200px] hover:bg-neutral-200 transition-all duration-200">
-            <MdWhatsapp className="w-16 h-16 text-primary-purple" />
-            <h2 className="text-quaternary-black font-semibold md:text-xl">
+          <div className="flex flex-col space-y-4 items-center justify-center rounded-lg p-5 md:w-[320px] w-[160px] h-full bg-white transition-all duration-200 shadow-lg">
+            <MdWhatsapp className="w-14 h-14 p-2 bg-[#25d366] text-white rounded-full" />
+            <h2 className="text-quaternary-black font-semibold md:text-xl text-base text-center">
               0877-5403-0807
             </h2>
-            <p className="text-quaternary-black font-openSans md:text-lg">
-              WhatsApp Admin
-            </p>
           </div>
         </Link>
-        <span className="text-neutral-700">atau</span>
         <Link href="https://instagram.com/kursusmengemudiwaras" target="_blank">
-          <div className="flex flex-col space-y-4 items-center border border-quaternary-black rounded-lg p-5 w-[320px] h-[200px] hover:bg-neutral-200 transition-all duration-200">
-            <FaInstagram className="w-16 h-16 text-primary-purple" />
-            <h2 className="text-quaternary-black font-semibold md:text-xl">
-              @kursusmengemudiwaras
+          <div className="flex flex-col space-y-4 items-center justify-center rounded-lg p-5 md:w-[320px] w-[160px] h-full bg-white transition-all duration-200 shadow-lg">
+            <Image
+              src="/instagram.png"
+              alt="instagram-logo"
+              width={50}
+              height={50}
+            />
+            <h2 className="text-quaternary-black font-semibold md:text-xl text-base text-center">
+              Kursus Mengemudi Waras
             </h2>
-            <p className="text-quaternary-black font-openSans md:text-lg">
-              Instagram
-            </p>
           </div>
         </Link>
       </motion.div>

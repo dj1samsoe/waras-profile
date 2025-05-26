@@ -1,9 +1,14 @@
-export interface User {
+export type Review = {
+  author_name: string;
+  profile_photo_url: string;
+  rating: number;
+  relative_time_description: string;
+  text: string;
+};
+
+export type MapsData = {
   name: string;
-  link: string;
-  thumbnail: string;
-  date: string;
-  rating: string;
-  review: string;
-  images: string[];
-}
+  rating: number;
+  total: number;
+  reviews: Review[];
+};

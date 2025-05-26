@@ -6,10 +6,10 @@ import Image from "next/image";
 
 export default function Menu() {
   return (
-    <div className="drawer md:px-12 bg-white text-black font-medium fixed z-50">
+    <div className="drawer md:px-12 bg-[#F5F5F5] text-black font-medium fixed z-50">
       <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content flex flex-col">
-        <div className="navbar bg-white w-full">
+        <div className="navbar bg-[#F5F5F5] w-full">
           <div className="mx-2 flex-1 px-2">
             <Image
               src={"/logo.png"}
@@ -31,8 +31,13 @@ export default function Menu() {
                 </Link>
               </li>
               <li>
-                <Link href={"#pelayanan"} aria-label="Pelayanan">
-                  Pelayanan
+                <Link href={"#paket-kursus"} aria-label="paket-kursus">
+                  Paket Kursus
+                </Link>
+              </li>
+              <li>
+                <Link href={"#testimoni"} aria-label="testimoni">
+                  Testimoni
                 </Link>
               </li>
 
@@ -72,7 +77,7 @@ export default function Menu() {
           aria-label="close sidebar"
           className="drawer-overlay"
         ></label>
-        <ul className="menu bg-white min-h-full w-80 p-4 items-center">
+        <ul className="menu bg-[#F5F5F5] min-h-full w-80 p-4 items-center">
           <Image
             src={"/logo.png"}
             alt="navbar-logo"
@@ -100,11 +105,20 @@ export default function Menu() {
           </li>
           <li className="w-full py-3">
             <Link
-              href={"#pelayanan"}
-              aria-label="Pelayanan"
+              href={"#paket-kursus"}
+              aria-label="paket-kursus"
               className="w-full flex justify-center text-center"
             >
-              Pelayanan
+              Paket Kursus
+            </Link>
+          </li>
+          <li className="w-full py-3">
+            <Link
+              href={"#testimoni"}
+              aria-label="testimoni"
+              className="w-full flex justify-center text-center"
+            >
+              Testimoni
             </Link>
           </li>
           <li className="w-full py-3">

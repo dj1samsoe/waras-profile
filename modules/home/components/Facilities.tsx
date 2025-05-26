@@ -33,7 +33,7 @@ export default function Facilities() {
           pengajaran yang baik
         </p>
       </motion.div>
-      <div className="w-full grid lg:grid-cols-3 lg:grid-rows-2 md:grid-cols-2 md:grid-rows-3 grid-cols-1 gap-7">
+      <div className="w-full grid lg:grid-cols-3 lg:grid-rows-2 md:grid-cols-2 md:grid-rows-3 grid-cols-2 gap-7">
         {FACILITIES?.map((item, index) => (
           <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -46,10 +46,12 @@ export default function Facilities() {
               <img
                 src={item.icon}
                 alt="fasilitas-image"
-                className="w-24 h-24"
+                className="md:w-24 w-16 md:h-24 h-16"
                 loading="lazy"
               />
-              <p className="text-xl font-medium text-black">{item.title}</p>
+              <p className="md:text-xl text-lg font-medium text-black">
+                {item.title}
+              </p>
             </div>
           </motion.div>
         ))}
