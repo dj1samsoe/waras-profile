@@ -68,7 +68,7 @@ export default function Service() {
         </h1>
         <Breakline className="w-24 text-center border-2 border-primary-purple" />
       </motion.div>
-      <div className="grid lg:grid-cols-4 grid-cols-2 gap-7 ">
+      <div className="grid lg:grid-cols-4 grid-cols-2 md:gap-7 gap-3">
         {MANUAL?.map((item, index) => (
           <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -117,7 +117,7 @@ export default function Service() {
         </h1>
         <Breakline className="w-24 text-center border-2 border-primary-purple" />
       </motion.div>
-      <div className="grid lg:grid-cols-4 grid-cols-2 gap-7 ">
+      <div className="grid lg:grid-cols-4 grid-cols-2 md:gap-7 gap-3">
         {MATIC?.map((item, index) => (
           <motion.div
             key={index}

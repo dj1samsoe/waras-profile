@@ -5,6 +5,7 @@ import React from "react";
 import Image from "next/image";
 
 export default function Footer() {
+  const currentYear = new Date().getFullYear();
   return (
     <footer className="footer footer-center p-10 bg-quaternary-black text-primary-white rounded">
       <Image src="/logo-4.png" alt="navbar-logo" width={200} height={100} />
@@ -64,7 +65,10 @@ export default function Footer() {
         </Link>
       </nav> */}
       <div>
-        <p>Copyright © 2024 - All right reserved by Kursus Mengemudi Waras</p>
+        <p>
+          Copyright © {currentYear} - All right reserved by Kursus Mengemudi
+          Waras
+        </p>
       </div>
     </footer>
   );

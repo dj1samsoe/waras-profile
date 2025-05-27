@@ -49,7 +49,7 @@ export default function Facilities() {
                 className="md:w-24 w-16 md:h-24 h-16"
                 loading="lazy"
               />
-              <p className="md:text-xl text-lg font-medium text-black">
+              <p className="md:text-xl text-lg font-medium text-black text-center">
                 {item.title}
               </p>
             </div>
