@@ -9,7 +9,7 @@ export async function GET() {
   if (!apiKey || !placeId) {
     return NextResponse.json(
       { error: "Missing API Key or Place ID" },
-      { status: 500 }
+      { status: 500 },
     );
   }
 
@@ -22,13 +22,13 @@ export async function GET() {
           "User-Agent": "Mozilla/5.0 (compatible; AcmeInc/1.0)",
           "Accept-Language": "id",
         },
-      }
+      },
     );
 
     if (!res.ok) {
       return NextResponse.json(
         { error: "Fetch failed" },
-        { status: res.status }
+        { status: res.status },
       );
     }
 
@@ -36,7 +36,7 @@ export async function GET() {
     console.log("🚀🚀DATA RESULT :", data);
 
     if (data.status !== "OK") {
-      return NextResponse.json({ error: data.status }, { status: 500 });
+      return NextResponse.json({ error: data.error_message }, { status: 500 });
     }
 
     return NextResponse.json({
