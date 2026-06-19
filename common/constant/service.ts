@@ -55,12 +55,12 @@ export const MATIC = [
   {
     title: "Ekonomis",
     sup: "Rp",
-    price: 450,
+    price: 500,
     sub: "ribu",
     description1: "5 jam tatap muka - 2x Pertemuan (2 jam & 3 jam)",
     description2: "Mobil Matic",
     description3: "",
-    href: "https://api.whatsapp.com/send?phone=6287754030807&text=Halo%2C%20Saya%20ingin%20mendaftar%20paket%20Matic%20Ekonomis%20di%20Kursus%20Mengemudi%20Waras%20dengan%20biaya%20Rp.%20450.000.%20Bagaimana%20cara%20pembayarannya%3F",
+    href: "https://api.whatsapp.com/send?phone=6287754030807&text=Halo%2C%20Saya%20ingin%20mendaftar%20paket%20Matic%20Ekonomis%20di%20Kursus%20Mengemudi%20Waras%20dengan%20biaya%20Rp.%20500.000.%20Bagaimana%20cara%20pembayarannya%3F",
   },
   {
     title: "Intensif + SIM",
@@ -75,11 +75,11 @@ export const MATIC = [
   {
     title: "Ekonomis + SIM",
     sup: "Rp",
-    price: 1.55,
+    price: 1.6,
     sub: "juta",
     description1: "5 jam tatap muka - 2x Pertemuan (2 jam & 3 jam)",
     description2: "Mobil Matic",
     description3: "Pengurusan SIM A",
-    href: "https://api.whatsapp.com/send?phone=6287754030807&text=Halo%2C%20Saya%20ingin%20mendaftar%20paket%20Matic%20Ekonomis%20%2B%20SIM%20di%20Kursus%20Mengemudi%20Waras%20dengan%20biaya%20Rp.%201.550.000.%20Bagaimana%20cara%20pembayarannya%3F",
+    href: "https://api.whatsapp.com/send?phone=6287754030807&text=Halo%2C%20Saya%20ingin%20mendaftar%20paket%20Matic%20Ekonomis%20%2B%20SIM%20di%20Kursus%20Mengemudi%20Waras%20dengan%20biaya%20Rp.%201.600.000.%20Bagaimana%20cara%20pembayarannya%3F",
   },
 ];
